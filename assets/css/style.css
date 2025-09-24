@@ -424,7 +424,7 @@ header {
 
         .item-price {
             font-weight: bold;
-            color: white;
+            color: var(--primary);
             font-size: 18px;
         }
 
