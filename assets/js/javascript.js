@@ -120,7 +120,7 @@ function setupEventListeners() {
 
             { id: 19, name: "Paratha (2 pcs)", category: "fastfood", price: 1.5, originalPrice: 2, discount: 75, description: "Layered, flaky flatbread cooked with ghee or oil. Soft yet crispy, perfect with curries or eaten alone as a snack.", image: "https://vegehomecooking.com/wp-content/uploads/2024/08/TriangleParathaFeaturedImage.jpg" },
 
-            { id: 20, name: "Mughlai with Potato curry", category: "fastfood", price: 2, originalPrice: 3, discount: 67, description: "Rich, creamy potato/chicken dish cooked in spiced gravy. A Mughal-inspired indulgence served with naan or paratha and garnished with herbs.", image: "https://www.getbengal.com/uploads/story_image/Tourism-Mughlai-Paratha.jpg" },
+            { id: 20, name: "Mughlai with Potato curry", category: "fastfood", price: 2, originalPrice: 3, discount: 67, description: "Rich, creamy potato/chicken dish cooked in spiced gravy. A Mughal-inspired indulgence served with naan or paratha and garnished with herbs.", image: "https://machhlibabafries.com/wp-content/uploads/MuttonMughlaiParatha.jpg" },
 
             { id: 21, name: "Chatpati", category: "fastfood", price: 1, originalPrice: 2.5, discount: 40, description: "Tangy mix of chickpeas, onions, chilies, and tamarind sauce. A zesty Bangladeshi chaat-style snack garnished with coriander or crunchy sev.", image: "https://img-global.cpcdn.com/recipes/71b1c35259310cb4/680x781cq80/fry-chatpati-chaat-recipe-main-photo.jpg" },
 
@@ -757,3 +757,4 @@ if (!clickDiv || !hiddenDiv) {
     }
   });
 }
+
