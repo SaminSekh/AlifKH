@@ -232,7 +232,7 @@ const discountCodes = {
 
 // Contact information
 const whatsappNumber = "+601160916195";
-const telegramId = "@Shahinislam11";
+const telegramId = "@alifkhres";
 
 // Cart functionality
 let cart = [];
