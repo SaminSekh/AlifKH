@@ -690,33 +690,28 @@ function startCarousel() {
 }
 
 // PWA functionality
-if ("serviceWorker" in navigator) {
-    navigator.serviceWorker
-        .register("../sw.js")
-        .then(() => console.log("SW registered"))
-        .catch((err) => console.log("SW fail", err));
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/service-worker.js')
+    .then(() => console.log('Service Worker registered'));
 }
 
 let deferredPrompt;
-const installBtn = document.getElementById("installBtn");
 
-window.addEventListener("beforeinstallprompt", (e) => {
-    e.preventDefault();
-    deferredPrompt = e;
-    installBtn.style.display = "inline-block";
+window.addEventListener('beforeinstallprompt', (e) => {
+  e.preventDefault();
+  deferredPrompt = e;
+  document.getElementById('installBtn').style.display = 'flex'; // Show the APK link
 });
 
-installBtn.addEventListener("click", () => {
-    installBtn.style.display = "none";
+document.getElementById('installBtn').addEventListener('click', async () => {
+  if (deferredPrompt) {
     deferredPrompt.prompt();
-    deferredPrompt.userChoice.then((choiceResult) => {
-        if (choiceResult.outcome === "accepted") {
-            console.log("✅ User accepted install");
-        } else {
-            console.log("❌ User dismissed install");
-        }
-        deferredPrompt = null;
-    });
+    const { outcome } = await deferredPrompt.userChoice;
+    console.log(`User response: ${outcome}`);
+    deferredPrompt = null;
+  } else {
+    alert('Install option not available. Use Chrome on Android or Desktop.');
+  }
 });
 
 // Share functionality
