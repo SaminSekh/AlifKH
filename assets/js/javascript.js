@@ -231,7 +231,7 @@ const discountCodes = {
 };
 
 // Contact information
-const whatsappNumber = "+916294353611";
+const whatsappNumber = "+601160916195";
 const telegramId = "@Shahinislam11";
 
 // Cart functionality
