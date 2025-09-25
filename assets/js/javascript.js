@@ -78,111 +78,109 @@ function setupEventListeners() {
 }
         
         
-        
-        
-              const menuItems = [
+         const menuItems = [
 
-            { id: 1, name: "Pani puri/ Fuchka (10pcs)", category: "fastfood", price: 2.5, originalPrice: 4, discount: 63, description: "Crispy hollow puris filled with tamarind water, chickpeas, and potatoes. One-bite snack bursting with tangy, spicy flavors. Served with extra flavored water for a customizable street treat.", image: "https://www.seema.com/wp-content/uploads/2022/08/Pani-Poori.jpg" },
+            { id: 1, name: "Pani puri/ Fuchka (10pcs)", category: "fastfood", price: 2.5, originalPrice: 4, discount: 38, description: "Crispy Indian pani puri / fuchka served with tangy tamarind water – a popular Bangladeshi street food in Sihanoukville, perfect for halal snack lovers and Indian food tourists.", image: "https://www.seema.com/wp-content/uploads/2022/08/Pani-Poori.jpg" },
 
-            { id: 2, name: "Pani puri/ Fuchka (50pcs)", category: "fastfood", price: 10, originalPrice: 20, discount: 50, description: "Larger serving of crispy puris with tangy tamarind water and fillings. Perfect for sharing, offering a mix of sweet, sour, and spicy tastes with chutneys and mashed potatoes.", image: "https://ichef.bbci.co.uk/food/ic/food_16x9_1600/recipes/pani_puri_90458_16x9.jpg" },
+            { id: 2, name: "Pani puri/ Fuchka (50pcs)", category: "fastfood", price: 10, originalPrice: 20, discount: 50, description: "Party-size platter of authentic Indian & Bangladeshi fuchka, ideal for families or late-night gatherings at our 24/7 Indian restaurant Sihanoukville.", image: "https://ichef.bbci.co.uk/food/ic/food_16x9_1600/recipes/pani_puri_90458_16x9.jpg" },
 
-            { id: 3, name: "Dal Puri (4pcs)", category: "fastfood", price: 2.7, originalPrice: 4, discount: 68, description: "Deep-fried flatbreads stuffed with spiced lentil filling. Crispy outside and soft inside, served with chutney or spicy curry for a savory, satisfying snack.", image: "https://www.salmathechef.com/fileadmin/user_upload/66426523_384937842159724_1394540683754209280_o.jpg" },
+            { id: 3, name: "Dal Puri (4pcs)", category: "fastfood", price: 2.7, originalPrice: 4, discount: 33, description: "Fluffy Bengali dal puri stuffed with spiced lentils, a must-try Bangla halal food for expats craving home taste.", image: "https://www.salmathechef.com/fileadmin/user_upload/66426523_384937842159724_1394540683754209280_o.jpg" },
 
-            { id: 4, name: "Jhal Muri", category: "fastfood", price: 1, originalPrice: 2, discount: 50, description: "Puffed rice mixed with spices, onions, chilies, and peanuts. A light, crunchy snack with tangy, spicy flavors, served in paper cones for easy street-side eating.", image: "https://southindianfoods.in/recipe_picture_enlarge/jhal-muri-masala-puffed-rice.jpg" },
+            { id: 4, name: "Jhal Muri", category: "fastfood", price: 1, originalPrice: 2, discount: 50, description: "Traditional Kolkata jhal muri – spicy puffed rice mixed with vegetables and masala, a famous Indian street food Sihanoukville snack.", image: "https://southindianfoods.in/recipe_picture_enlarge/jhal-muri-masala-puffed-rice.jpg" },
 
-            { id: 5, name: "Special Jhal Muri (curry)", category: "fastfood", price: 1.5, originalPrice: 3, discount: 50, description: "Puffed rice tossed with curry-flavored spices, vegetables, and tangy chutneys. Offers a bolder, richer taste than regular jhal muri, served fresh in a cone or bowl.", image: "https://www.whiskaffair.com/wp-content/uploads/2020/10/Jhal-Muri-2-3.jpg" },
+            { id: 5, name: "Special Jhal Muri (curry)", category: "fastfood", price: 1.5, originalPrice: 3, discount: 50, description: "Premium jhal muri with curry twist, bringing authentic Bangladeshi cuisine to Sihanoukville night food lovers.", image: "https://www.whiskaffair.com/wp-content/uploads/2020/10/Jhal-Muri-2-3.jpg" },
 
-            { id: 6, name: "Alur chop (5pcs)", category: "fastfood", price: 2, originalPrice: 5, discount: 40, description: "Spiced mashed potato patties coated in gram flour batter and deep-fried. Crispy outside, soft inside, served with tamarind chutney or ketchup for a popular street snack.", image: "https://upload.wikimedia.org/wikipedia/commons/a/ae/%E0%A6%86%E0%A6%B2%E0%A7%81%E0%A6%B0_%E0%A6%9A%E0%A6%AA.jpg" },
+            { id: 6, name: "Alur chop (5pcs)", category: "fastfood", price: 2, originalPrice: 5, discount: 60, description: "Golden potato fritters loved by Indian expats and travelers looking for budget-friendly halal snacks.", image: "https://upload.wikimedia.org/wikipedia/commons/a/ae/%E0%A6%86%E0%A6%B2%E0%A7%81%E0%A6%B0_%E0%A6%9A%E0%A6%AA.jpg" },
 
-            { id: 7, name: "Piayaju (5pcs)", category: "fastfood", price: 2, originalPrice: 5, discount: 40, description: "Lentil fritters with onions, chilies, and spices, deep-fried until crunchy. A savory Bangladeshi favorite, often enjoyed with tea or spicy chutney.", image: "https://tastycookingblog.com/wp-content/uploads/2024/10/piaju.jpg" },
+            { id: 7, name: "Piayaju (5pcs)", category: "fastfood", price: 2, originalPrice: 5, discount: 60, description: "Crunchy lentil fritters, a top pick for Pakistani expats and those exploring Sihanoukville Indian food spots.", image: "https://tastycookingblog.com/wp-content/uploads/2024/10/piaju.jpg" },
 
-            { id: 8, name: "Beguni (5pcs)", category: "fastfood", price: 2, originalPrice: 5, discount: 40, description: "Thinly sliced eggplant coated in gram flour batter and deep-fried. Crispy, flavorful, and spiced with turmeric and chili for a tasty snack or side dish.", image: "https://yummyfoodmadeeasy.wordpress.com/wp-content/uploads/2012/08/img_2127.jpg" },
+            { id: 8, name: "Beguni (5pcs)", category: "fastfood", price: 2, originalPrice: 5, discount: 60, description: "Fried eggplant slices coated in gram-flour batter – a classic Bangladeshi halal restaurant delicacy.", image: "https://yummyfoodmadeeasy.wordpress.com/wp-content/uploads/2012/08/img_2127.jpg" },
 
-            { id: 9, name: "Chola Makha", category: "fastfood", price: 1, originalPrice: 2, discount: 50, description: "Boiled chickpeas mixed with onions, chilies, and tangy spices. A light, refreshing snack garnished with coriander and lemon for extra zing.", image: "https://img-global.cpcdn.com/recipes/7bc2a0cb09f12aba/680x781cq80/4-min-chola-makha-or-black-chana-chaat-recipe-main-photo.jpg" },
+            { id: 9, name: "Chola Makha", category: "fastfood", price: 1, originalPrice: 2, discount: 50, description: "Spicy chickpeas tossed with herbs, a healthy Indian takeaway Sihanoukville favorite.", image: "https://img-global.cpcdn.com/recipes/7bc2a0cb09f12aba/680x781cq80/4-min-chola-makha-or-black-chana-chaat-recipe-main-photo.jpg" },
 
-            { id: 10, name: "Special Chola Makha", category: "fastfood", price: 1.5, originalPrice: 3.5, discount: 43, description: "Chola makha upgrade with extra spices, boiled egg, or meat pieces. Richer, heartier flavor with tamarind or yogurt, served with puffed rice toppings.", image: "https://i.ytimg.com/vi/XYDm2EuOAL8/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLD6I1uEEZYTMNjPoFLlu3_PMhIc0g" },
+            { id: 10, name: "Special Chola Makha", category: "fastfood", price: 1.5, originalPrice: 3.5, discount: 57, description: "Chola makha upgrade with extra spices,Upgraded chickpea salad for late-night 24h food delivery in Sihanoukville.", image: "https://i.ytimg.com/vi/XYDm2EuOAL8/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLD6I1uEEZYTMNjPoFLlu3_PMhIc0g" },
 
             { id: 11, name: "Egg Roll", category: "fastfood", price: 1.5, originalPrice: 3, discount: 50, description: "Paratha wrapped around a spiced egg omelet with onions and sauces. Hot, savory, and satisfying, served with ketchup or spicy chutney.", image: "https://1.bp.blogspot.com/-FtlrI6vhMww/X2jDWCb9zUI/AAAAAAAAMPQ/TmUrBHkFo6Ui-uPBi4D6KHKhKwq6-zebQCLcBGAsYHQ/s16000/Kolkata%2Begg%2Broll.JPG" },
 
-            { id: 12, name: "Premium Egg Roll", category: "fastfood", price: 2, originalPrice: 5, discount: 40, description: "Egg roll enhanced with cheese, chicken, or premium sauces. Thicker paratha and richer fillings create a flavorful, filling street snack.", image: "https://www.unileverfoodsolutions.com.au/dam/global-ufs/mcos/anz/calcmenu/recipe/killer-recipes-update/californian-egg-roll-main-header-anz.jpg" },
+            { id: 12, name: "Premium Egg Roll", category: "fastfood", price: 2, originalPrice: 5, discount: 60, description: "Kolkata-style egg roll stuffed with fresh veggies – a quick Indian food delivery snack for tourists.", image: "https://www.unileverfoodsolutions.com.au/dam/global-ufs/mcos/anz/calcmenu/recipe/killer-recipes-update/californian-egg-roll-main-header-anz.jpg" },
 
-            { id: 13, name: "Chicken Roll", category: "fastfood", price: 2, originalPrice: 5, discount: 40, description: "Paratha rolled with spiced grilled chicken, onions, and tangy sauces. Hearty and flavorful, often sprinkled with chaat masala.", image: "https://madscookhouse.com/wp-content/uploads/2021/02/Chicken-Kathi-Roll-500x375.jpg" },
+            { id: 13, name: "Chicken Roll", category: "fastfood", price: 2, originalPrice: 5, discount: 60, description: "Juicy halal chicken wrapped in soft paratha, perfect for Sihanoukville night food cravings.", image: "https://madscookhouse.com/wp-content/uploads/2021/02/Chicken-Kathi-Roll-500x375.jpg" },
 
-            { id: 14, name: "Chow Mein (Egg)", category: "fastfood", price: 2, originalPrice: 3.5, discount: 57, description: "Stir-fried noodles with vegetables, soy sauce, and spices. A South Asian street food favorite, served hot and garnished with spring onions or chili sauce.", image: "https://takestwoeggs.com/wp-content/uploads/2025/05/Cantonese-Chow-Mein-noodle-pull.jpg" },
+            { id: 14, name: "Chow Mein (Egg)", category: "fastfood", price: 2, originalPrice: 3.5, discount: 43, description: "Stir-fried noodles with egg and vegetables, a popular Indian Chinese fusion food Sihanoukville dish.", image: "https://takestwoeggs.com/wp-content/uploads/2025/05/Cantonese-Chow-Mein-noodle-pull.jpg" },
 
-            { id: 15, name: "Premium Chow Mein (Chicken)", category: "fastfood", price: 2.5, originalPrice: 5, discount: 50, description: "Chow mein with shrimp, chicken, or extra vegetables. Rich sauces and premium ingredients give this version a deeper, more complex flavor.", image: "https://chefjar.com/wp-content/uploads/2024/09/chicken-chow-mein-1.jpg" },
+            { id: 15, name: "Premium Chow Mein (Chicken)", category: "fastfood", price: 2.5, originalPrice: 5, discount: 50, description: "Chicken-loaded chow mein loved by late-night foodies and 24/7 Indian restaurant visitors.", image: "https://chefjar.com/wp-content/uploads/2024/09/chicken-chow-mein-1.jpg" },
 
-            { id: 16, name: "Egg Toast (2pcs)", category: "fastfood", price: 2, originalPrice: 4, discount: 50, description: "Bread topped with spiced egg mixture, fried or toasted until golden. A quick, savory breakfast or snack served with ketchup or chutney.", image: "https://images.heb.com/is/image/HEBGrocery/Test/sunny-side-egg-in-toast-recipe.jpg" },
+            { id: 16, name: "Egg Toast (2pcs)", category: "fastfood", price: 2, originalPrice: 4, discount: 50, description: "Simple yet delicious Indian breakfast Sihanoukville choice, ideal for early morning takeaway.", image: "https://images.heb.com/is/image/HEBGrocery/Test/sunny-side-egg-in-toast-recipe.jpg" },
 
-            { id: 17, name: "Burger", category: "fastfood", price: 2, originalPrice: 4, discount: 50, description: "Bun stuffed with spiced meat or veggie patty, lettuce, and sauces. South Asian burgers feature local spices and chutneys for a unique flavor twist.", image: "https://www.francoislambert.one/cdn/shop/articles/mac_poulet_corn_flakes.webp?v=1723557298&width=1100" },
+            { id: 17, name: "Burger", category: "fastfood", price: 2, originalPrice: 4, discount: 50, description: "Halal burgers with Indian spices, a unique desi food Sihanoukville twist.", image: "https://www.francoislambert.one/cdn/shop/articles/mac_poulet_corn_flakes.webp?v=1723557298&width=1100" },
 
-            { id: 18, name: "Special Burger", category: "fastfood", price: 2.5, originalPrice: 6, discount: 42, description: "Burger with cheese, egg, or grilled meat, enhanced with bold sauces and spices. A hearty, satisfying fast food option.", image: "https://www.datocms-assets.com/129288/1725393944-moist-chicken-burgers.jpg" },
+            { id: 18, name: "Special Burger", category: "fastfood", price: 2.5, originalPrice: 6, discount: 58, description: "Premium Halal burgers with Indian spices, a unique desi food Sihanoukville twist.", image: "https://www.datocms-assets.com/129288/1725393944-moist-chicken-burgers.jpg" },
 
-            { id: 19, name: "Paratha (2 pcs)", category: "fastfood", price: 1.5, originalPrice: 2, discount: 75, description: "Layered, flaky flatbread cooked with ghee or oil. Soft yet crispy, perfect with curries or eaten alone as a snack.", image: "https://vegehomecooking.com/wp-content/uploads/2024/08/TriangleParathaFeaturedImage.jpg" },
+            { id: 19, name: "Paratha (2 pcs)", category: "fastfood", price: 1.5, originalPrice: 2, discount: 25, description: "Freshly made flaky paratha, served hot at our Al-If Indian restaurant Sihanoukville.", image: "https://vegehomecooking.com/wp-content/uploads/2024/08/TriangleParathaFeaturedImage.jpg" },
 
-            { id: 20, name: "Mughlai with Potato curry", category: "fastfood", price: 2, originalPrice: 3, discount: 67, description: "Rich, creamy potato/chicken dish cooked in spiced gravy. A Mughal-inspired indulgence served with naan or paratha and garnished with herbs.", image: "https://machhlibabafries.com/wp-content/uploads/MuttonMughlaiParatha.jpg" },
+            { id: 20, name: "Mughlai with Potato curry", category: "fastfood", price: 2, originalPrice: 3, discount: 33, description: "Authentic Mughlai paratha stuffed with egg and served with potato curry – a must for Indian expats in Cambodia.", image: "https://machhlibabafries.com/wp-content/uploads/MuttonMughlaiParatha.jpg" },
 
-            { id: 21, name: "Chatpati", category: "fastfood", price: 1, originalPrice: 2.5, discount: 40, description: "Tangy mix of chickpeas, onions, chilies, and tamarind sauce. A zesty Bangladeshi chaat-style snack garnished with coriander or crunchy sev.", image: "https://img-global.cpcdn.com/recipes/71b1c35259310cb4/680x781cq80/fry-chatpati-chaat-recipe-main-photo.jpg" },
+            { id: 21, name: "Chatpati", category: "fastfood", price: 1, originalPrice: 2.5, discount: 60, description: "Tangy chickpea mix known as Bangladeshi chatpati, a street food classic from Dhaka to Sihanoukville.", image: "https://img-global.cpcdn.com/recipes/71b1c35259310cb4/680x781cq80/fry-chatpati-chaat-recipe-main-photo.jpg" },
 
-            { id: 25, name: "Rice / Vat (1 person)", category: "meals", price: 0.8, originalPrice: 1.5, discount: 53, description: "Steamed plain rice, lightly spiced or plain. A versatile staple served hot with curries, dal, or vegetables for a balanced meal.", image: "https://www.indianhealthyrecipes.com/wp-content/uploads/2023/07/basmati-rice-recipe.jpg" },
+            { id: 25, name: "Rice / Vat (1 person)", category: "meals", price: 0.8, originalPrice: 1.5, discount: 47, description: "Steamed rice served with side dishes – the heart of Bangladeshi cuisine Sihanoukville.", image: "https://www.indianhealthyrecipes.com/wp-content/uploads/2023/07/basmati-rice-recipe.jpg" },
 
-            { id: 26, name: "Roti", category: "meals", price: 0.4, originalPrice: 1, discount: 0, description: "Soft, round flatbread made from wheat flour, lightly roasted on a griddle. A versatile staple served with curries, vegetables, or lentils, perfect for breakfast, lunch, or dinner.", image: "https://maple.kitchen/wp-content/uploads/2024/09/ready-to-eat-roti-750x422-1.webp" },
+            { id: 26, name: "Roti", category: "meals", price: 0.4, originalPrice: 1, discount: 60, description: "Soft, round flatbread made from wheat flour, lightly roasted on a griddle in Sihanoukville. A versatile staple served with curries, vegetables, or lentils, perfect for breakfast, lunch, or dinner.", image: "https://maple.kitchen/wp-content/uploads/2024/09/ready-to-eat-roti-750x422-1.webp" },
 
-            { id: 27, name: "Mosur Dal", category: "meals", price: 0.7, originalPrice: 1, discount: 70, description: "Red lentil curry with turmeric, onions, and mild spices. Protein-rich, comforting, and perfect with rice or flatbread.", image: "https://www.whiskaffair.com/wp-content/uploads/2021/02/Bengali-Masoor-Dal-2-3.jpg" },
+            { id: 27, name: "Mosur Dal", category: "meals", price: 0.7, originalPrice: 1, discount: 30, description: "Comforting red lentil soup loved by fans of Indian home-style cooking in Cambodia.", image: "https://www.whiskaffair.com/wp-content/uploads/2021/02/Bengali-Masoor-Dal-2-3.jpg" },
 
-            { id: 28, name: "Vegetable", category: "meals", price: 0.8, originalPrice: 2, discount: 40, description: "Mixed vegetables cooked with cumin, turmeric, and coriander. A healthy side dish served with rice or paratha.", image: "https://greenbowl2soul.com/wp-content/uploads/2021/06/Indian-vegetable-curry.jpg" },
+            { id: 28, name: "Vegetable", category: "meals", price: 0.8, originalPrice: 2, discount: 60, description: "Mixed vegetables cooked with cumin, turmeric, and coriander. A healthy side dish served with rice or paratha.", image: "https://greenbowl2soul.com/wp-content/uploads/2021/06/Indian-vegetable-curry.jpg" },
 
-            { id: 29, name: "Bharta", category: "meals", price: 0.7, originalPrice: 1.5, discount: 47, description: "Mashed vegetables, often eggplant or potato, seasoned with spices. Smoky and flavorful, perfect with rice or flatbread.", image: "https://cdn.dhakapost.com/media/imgAll/BG/2021October/received-667070851118864-20211230080946.jpeg" },
+            { id: 29, name: "Bharta", category: "meals", price: 0.7, originalPrice: 1.5, discount: 53, description: "Mashed vegetables, often eggplant or potato, seasoned with spices. Smoky and flavorful, perfect with rice or flatbread.", image: "https://cdn.dhakapost.com/media/imgAll/BG/2021October/received-667070851118864-20211230080946.jpeg" },
 
-            { id: 30, name: "Beef", category: "meals", price: 3, originalPrice: 5, discount: 60, description: "Tender beef slow-cooked with cumin, coriander, and garam masala. A hearty curry served with rice or naan.", image: "https://maldivescook.com/wp-content/uploads/beef-curry.jpg" },
+            { id: 30, name: "Beef", category: "meals", price: 3, originalPrice: 5, discount: 40, description: "Tender beef slow-cooked with cumin, coriander, and garam masala. available for 24h food delivery Sihanoukville.", image: "https://maldivescook.com/wp-content/uploads/beef-curry.jpg" },
 
-            { id: 31, name: "Mutton", category: "meals", price: 4.5, originalPrice: 6, discount: 75, description: "Slow-cooked goat meat in spiced gravy with onions and garlic. Aromatic and filling, paired with rice or paratha.", image: "https://static.toiimg.com/photo/63201465.cms" },
+            { id: 31, name: "Mutton", category: "meals", price: 4.5, originalPrice: 6, discount: 25, description: "Slow-cooked goat meat in spiced gravy with onions and garlic. Bangla food 24h delivery Sihanoukville.", image: "https://static.toiimg.com/photo/63201465.cms" },
 
-            { id: 32, name: "Chicken", category: "meals", price: 2.2, originalPrice: 3.5, discount: 63, description: "Chicken curry cooked with tomatoes, onions, and garam masala. Mildly spicy and versatile, served with rice or flatbread.", image: "https://www.foodandwine.com/thmb/8YAIANQTZnGpVWj2XgY0dYH1V4I=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/spicy-chicken-curry-FT-RECIPE0321-58f84fdf7b484e7f86894203eb7834e7.jpg" },
+            { id: 32, name: "Chicken", category: "meals", price: 2.2, originalPrice: 3.5, discount: 37, description: "Chicken curry cooked with tomatoes, onions, and garam masala. Bangladeshi food 24h delivery Sihanoukville.", image: "https://www.foodandwine.com/thmb/8YAIANQTZnGpVWj2XgY0dYH1V4I=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/spicy-chicken-curry-FT-RECIPE0321-58f84fdf7b484e7f86894203eb7834e7.jpg" },
 
-            { id: 33, name: "Rui Fish", category: "meals", price: 3, originalPrice: 5, discount: 60, description: "Rohu fish simmered in spiced curry with mustard oil. A tangy Bangladeshi classic served with rice.", image: "https://ajinomotobangladesh.com/wp-content/uploads/2023/01/1-4-scaled.jpg" },
+            { id: 33, name: "Rui Fish", category: "meals", price: 3, originalPrice: 5, discount: 40, description: "Rohu fish simmered in spiced curry with mustard oil at our 24/7 Bangladeshi restaurant.", image: "https://ajinomotobangladesh.com/wp-content/uploads/2023/01/1-4-scaled.jpg" },
 
-            { id: 34, name: "Tangra Fish", category: "meals", price: 3, originalPrice: 5, discount: 60, description: "Tangra fish cooked in a light, spicy curry or fried with spices. Delicate and flavorful, served with rice.", image: "https://s3-ap-south-1.amazonaws.com/betterbutterbucket-silver/bethica-das15240249455ad6c6713b05c.jpeg" },
+            { id: 34, name: "Tangra Fish", category: "meals", price: 3, originalPrice: 5, discount: 40, description: "Tangra fish cooked in a light, spicy curry or fried with spices. Delicate and flavorful, served with rice.", image: "https://s3-ap-south-1.amazonaws.com/betterbutterbucket-silver/bethica-das15240249455ad6c6713b05c.jpeg" },
 
-            { id: 35, name: "Prawn Curry", category: "meals", price: 3, originalPrice: 5, discount: 60, description: "Prawns cooked in a rich, coconut-based curry. Spicy and aromatic, perfect with rice or paratha.", image: "https://foodiesterminal.com/wp-content/uploads/2018/07/prawn-curry-goan-style.jpg" },
+            { id: 35, name: "Prawn Curry", category: "meals", price: 3, originalPrice: 5, discount: 40, description: "Prawns cooked in a rich, coconut-based curry. Spicy and aromatic, perfect with rice or paratha.", image: "https://foodiesterminal.com/wp-content/uploads/2018/07/prawn-curry-goan-style.jpg" },
 
-            { id: 36, name: "Beef Khichuri", category: "mealspackage", price: 4.5, originalPrice: 7, discount: 64, description: "Spiced rice and lentils cooked together with vegetables or meat. Comforting and hearty, garnished with fried onions or ghee.", image: "https://i.ytimg.com/vi/69zEKzBmw-w/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCvyLGtdmAOXsTB4277pkeHS80OSg" },
+            { id: 36, name: "Beef Khichuri", category: "mealspackage", price: 4.5, originalPrice: 7, discount: 36, description: "Spiced rice and lentils cooked together with vegetables or meat. Comforting and hearty, garnished with fried onions or ghee.", image: "https://i.ytimg.com/vi/69zEKzBmw-w/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCvyLGtdmAOXsTB4277pkeHS80OSg" },
 
-            { id: 37, name: "Beef Biryani", category: "mealspackage", price: 5, originalPrice: 7, discount: 71, description: "Fragrant rice layered with spiced beef and saffron. A festive biryani served with raita or salad.", image: "https://www.masala.tv/wp-content/uploads/2015/12/Beef-Biryani-Rida-Aftab.jpg" },
+            { id: 37, name: "Beef Biryani", category: "mealspackage", price: 5, originalPrice: 7, discount: 29, description: "Fragrant rice layered with spiced beef and saffron. A festive biryani served with raita or salad.", image: "https://www.masala.tv/wp-content/uploads/2015/12/Beef-Biryani-Rida-Aftab.jpg" },
 
-            { id: 38, name: "Mutton Biryani", category: "mealspackage", price: 6, originalPrice: 7.5, discount: 80, description: "Aromatic mutton biryani with caramelized onions and rich spices. A luxurious celebratory dish.", image: "https://www.cubesnjuliennes.com/wp-content/uploads/2021/03/Best-Mutton-Biryani-Recipe.jpg" },
+            { id: 38, name: "Mutton Biryani", category: "mealspackage", price: 6, originalPrice: 7.5, discount: 20, description: "Aromatic mutton biryani with caramelized onions and rich spices. A luxurious celebratory dish.", image: "https://www.cubesnjuliennes.com/wp-content/uploads/2021/03/Best-Mutton-Biryani-Recipe.jpg" },
 
-            { id: 39, name: "Chicken Biryani", category: "mealspackage", price: 4, originalPrice: 6, discount: 67, description: "Chicken biryani layered with fragrant rice and marinated chicken. Loved for its rich aroma and bold flavor.", image: "https://images.food52.com/VOfOuvcQe7fBeSqixNe1L-LhUBY=/d815e816-4664-472e-990b-d880be41499f--chicken-biryani-recipe.jpg" },
+            { id: 39, name: "Chicken Biryani", category: "mealspackage", price: 4, originalPrice: 6, discount: 33, description: "Chicken biryani layered with fragrant rice and marinated chicken. Loved for its rich aroma and bold flavor.", image: "https://images.food52.com/VOfOuvcQe7fBeSqixNe1L-LhUBY=/d815e816-4664-472e-990b-d880be41499f--chicken-biryani-recipe.jpg" },
 
-            { id: 40, name: "Rice+Fish+Veg+Dal", category: "mealspackage", price: 4, originalPrice: 7, discount: 57, description: "Steamed white rice served with spiced fish curry, seasonal vegetables, and comforting red lentil dal. A balanced Bangladeshi meal offering mild heat and rich, homely flavors.", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR40Sl7Wo0TwvowJYBYRYQXW3-xoFA4E8nnfQ&s" },
+            { id: 40, name: "Rice+Fish+Veg+Dal", category: "mealspackage", price: 4, originalPrice: 7, discount: 43, description: "Steamed white rice served with spiced fish curry, seasonal vegetables, and comforting red lentil dal. A balanced Bangladeshi meal offering mild heat and rich, homely flavors.", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR40Sl7Wo0TwvowJYBYRYQXW3-xoFA4E8nnfQ&s" },
 
-            { id: 41, name: "Rice+Beef+Veg+Dal", category: "mealspackage", price: 4, originalPrice: 6, discount: 67, description: "Fluffy rice paired with slow-cooked beef curry, fresh vegetables, and hearty lentil dal. A filling, protein-rich platter with deep, aromatic spices.", image: "https://www.shutterstock.com/image-photo/traditional-nepalese-food-thali-dal-260nw-1827466619.jpg" },
+            { id: 41, name: "Rice+Beef+Veg+Dal", category: "mealspackage", price: 4, originalPrice: 6, discount: 33, description: "Fluffy rice paired with slow-cooked beef curry, fresh vegetables, and hearty lentil dal. A filling, protein-rich platter with deep, aromatic spices.", image: "https://www.shutterstock.com/image-photo/traditional-nepalese-food-thali-dal-260nw-1827466619.jpg" },
 
-            { id: 42, name: "Rice+Mutton+Veg+Dal", category: "mealspackage", price: 5, originalPrice: 7, discount: 71, description: "Steamed rice served with tender mutton curry, mixed vegetables, and flavorful lentil dal. A classic, festive Bangladeshi combination full of rich, savory taste.", image: "https://media.sublimetrails.com/uploads/img/dal-bhat-tarkari-(2).webp" },
+            { id: 42, name: "Rice+Mutton+Veg+Dal", category: "mealspackage", price: 5, originalPrice: 7, discount: 29, description: "Steamed rice served with tender mutton curry, mixed vegetables, and flavorful lentil dal. A classic, festive Bangladeshi combination full of rich, savory taste.", image: "https://media.sublimetrails.com/uploads/img/dal-bhat-tarkari-(2).webp" },
 
-            { id: 43, name: "Rice+Chicken+Veg+Dal", category: "mealspackage", price: 3.5, originalPrice: 5, discount: 70, description: "Soft white rice accompanied by spiced chicken curry, seasonal vegetables, and mildly spiced lentil dal. A wholesome, comforting everyday Bangladeshi meal.", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnjLvl33Dab8T3IySz7FDzzVyvAJBMMwgQkg&s" },
+            { id: 43, name: "Rice+Chicken+Veg+Dal", category: "mealspackage", price: 3.5, originalPrice: 5, discount: 30, description: "Soft white rice, spiced chicken curry, seasonal vegetables, and lentil dal - free home delivery at sihanoukville.", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnjLvl33Dab8T3IySz7FDzzVyvAJBMMwgQkg&s" },
 
-            { id: 46, name: "Mango (1KG)", category: "fruits", price: 1.2, originalPrice: 1.5, discount: 80, description: "", image: "https://ichef.bbci.co.uk/images/ic/1040x1040/p06hk0h6.jpg" },
+            { id: 46, name: "Mango (1KG)", category: "fruits", price: 1.2, originalPrice: 1.5, discount: 20, description: "", image: "https://ichef.bbci.co.uk/images/ic/1040x1040/p06hk0h6.jpg" },
 
-            { id: 47, name: "Pinapple (2pc - Medium)", category: "fruits", price: 1.5, originalPrice: 2, discount: 75, description: "", image: "https://www.thetakeout.com/img/gallery/the-storage-trick-that-makes-pineapple-effortlessly-sweeter/l-intro-1736378192.jpg" },
+            { id: 47, name: "Pinapple (2pc - Medium)", category: "fruits", price: 1.5, originalPrice: 2, discount: 25, description: "", image: "https://www.thetakeout.com/img/gallery/the-storage-trick-that-makes-pineapple-effortlessly-sweeter/l-intro-1736378192.jpg" },
 
-            { id: 48, name: "Apple (1KG)", category: "fruits", price: 5, originalPrice: 6, discount: 83, description: "", image: "https://hips.hearstapps.com/hmg-prod/images/apples-at-farmers-market-royalty-free-image-1627321463.jpg?crop=1xw:0.94466xh;center,top&resize=1200:*" },
+            { id: 48, name: "Apple (1KG)", category: "fruits", price: 5, originalPrice: 6, discount: 17, description: "", image: "https://hips.hearstapps.com/hmg-prod/images/apples-at-farmers-market-royalty-free-image-1627321463.jpg?crop=1xw:0.94466xh;center,top&resize=1200:*" },
 
-            { id: 49, name: "Grape (1KG)", category: "fruits", price: 5, originalPrice: 7, discount: 71, description: "", image: "https://www.seriouseats.com/thmb/XwtcUWlY3TDauWPbBiID1yZ-6Jw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1289843973-karandaev-hero-ca6df1eb21504ba0965e2319ef4c26e3.jpg" },
+            { id: 49, name: "Grape (1KG)", category: "fruits", price: 5, originalPrice: 7, discount: 29, description: "", image: "https://www.seriouseats.com/thmb/XwtcUWlY3TDauWPbBiID1yZ-6Jw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1289843973-karandaev-hero-ca6df1eb21504ba0965e2319ef4c26e3.jpg" },
 
-            { id: 50, name: "Banana (8pcs)", category: "fruits", price: 1, originalPrice: 1.5, discount: 67, description: "", image: "https://efructifera.com/wp-content/uploads/2021/07/NORMALLLL.jpg" },
+            { id: 50, name: "Banana (8pcs)", category: "fruits", price: 1, originalPrice: 1.5, discount: 33, description: "", image: "https://efructifera.com/wp-content/uploads/2021/07/NORMALLLL.jpg" },
 
             { id: 54, name: "Dragon Fruite (1KG)", category: "fruits", price: 1.5, originalPrice: 3, discount: 50, description: "", image: "https://www.siciliaagrumi.it/wp-content/uploads/2021/09/dragonfruit.jpg" },
 
-            { id: 63, name: "Mango Juice", category: "drinks", price: 1.5, originalPrice: 3, discount: 50, description: "Sweet, thick mango juice blended from ripe mangoes. A tropical summer favorite served chilled with lemon or sugar.", image: "https://nawon.com.vn/wp-content/uploads/2019/01/10-benefits-of-mango-juice-3.jpg" },
+            { id: 63, name: "Mango Juice", category: "drinks", price: 1.5, originalPrice: 3, discount: 50, description: "Sweet, thick mango juice blended from ripe mangoes – loved by Indian tourists in Sihanoukville.", image: "https://nawon.com.vn/wp-content/uploads/2019/01/10-benefits-of-mango-juice-3.jpg" },
 
-            { id: 64, name: "Pinapple Juice", category: "drinks", price: 2, originalPrice: 3.5, discount: 57, description: "Fresh pineapple juice, sweet and tangy, served chilled with optional salt or sugar.", image: "https://www.kuvingsusa.com/cdn/shop/articles/kuvings-blog-pineapple.png?v=1750962073&width=1024" },
+            { id: 64, name: "Pinapple Juice", category: "drinks", price: 2, originalPrice: 3.5, discount: 43, description: "Fresh pineapple juice, sweet and tangy, served chilled with optional salt or sugar.", image: "https://www.kuvingsusa.com/cdn/shop/articles/kuvings-blog-pineapple.png?v=1750962073&width=1024" },
 
-            { id: 65, name: "Apple Juice", category: "drinks", price: 2.5, originalPrice: 4, discount: 63, description: "Clear, refreshing apple juice, lightly sweetened and sometimes mixed with lemon.", image: "https://images.prismic.io/goodnature/ZDIxNjE5ZTAtYjlhMi00ZTlmLTkxNTktODZiODA1YzkxNmFh_apple-juice-hero.jpg?auto=compress%2Cformat&rect=0%2C0%2C1200%2C628&w=1200&h=628&q=75" },
+            { id: 65, name: "Apple Juice", category: "drinks", price: 2.5, originalPrice: 4, discount: 38, description: "Clear, refreshing apple juice, lightly sweetened and sometimes mixed with lemon.", image: "https://images.prismic.io/goodnature/ZDIxNjE5ZTAtYjlhMi00ZTlmLTkxNTktODZiODA1YzkxNmFh_apple-juice-hero.jpg?auto=compress%2Cformat&rect=0%2C0%2C1200%2C628&w=1200&h=628&q=75" },
 
-            { id: 66, name: "Grape Juice", category: "drinks", price: 2.5, originalPrice: 4, discount: 63, description: "Sweet, slightly tart grape juice, served chilled for a rich fruity taste.", image: "https://cdn.healthyrecipes101.com/recipes/images/juices/is-concord-grape-juice-healthy-clakvj5ee008kpw1b3qbf3iys.webp" },
+            { id: 66, name: "Grape Juice", category: "drinks", price: 2.5, originalPrice: 4, discount: 38, description: "Sweet, slightly tart grape juice, served chilled for a rich fruity taste.", image: "https://cdn.healthyrecipes101.com/recipes/images/juices/is-concord-grape-juice-healthy-clakvj5ee008kpw1b3qbf3iys.webp" },
 
-            { id: 67, name: "Orange juice", category: "drinks", price: 1.5, originalPrice: 3, discount: 0, description: "Freshly squeezed juice from ripe oranges, naturally sweet and tangy. Served chilled for a refreshing, vitamin-rich drink that’s perfect for hot days or a healthy breakfast boost.", image: "https://greenletes.com/wp-content/uploads/2018/05/orange-juice.png" },
+            { id: 67, name: "Orange juice", category: "drinks", price: 1.5, originalPrice: 3, discount: 50, description: "Freshly squeezed juice from ripe oranges, naturally sweet and tangy. Served chilled for a refreshing, vitamin-rich drink that’s perfect for hot days or a healthy breakfast boost.", image: "https://greenletes.com/wp-content/uploads/2018/05/orange-juice.png" },
 
             { id: 68, name: "Banana Juice", category: "drinks", price: 1.5, originalPrice: 3, discount: 50, description: "Creamy banana smoothie made with milk or yogurt, sweetened with honey or sugar.", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsZbTWpW4byTlPa1Y52kcCBLGSw1LIfYuCYw&s" },
 
@@ -190,21 +188,21 @@ function setupEventListeners() {
 
             { id: 70, name: "Carrot Juice", category: "drinks", price: 1.5, originalPrice: 3, discount: 50, description: "Sweet carrot juice, rich in vitamins, sometimes spiced with ginger and lemon.", image: "https://www.alphafoodie.com/wp-content/uploads/2020/11/Orange-Carrot-Juice-1-of-1.jpeg" },
 
-            { id: 71, name: "Coconut", category: "drinks", price: 0.8, originalPrice: 2, discount: 40, description: "Naturally sweet coconut water, served straight from green coconuts for ultimate refreshment.", image: "https://images.squarespace-cdn.com/content/v1/5c1074accc8fed6a4251da8f/1652200437658-RFWI16B6LU8U3BF7ZN9V/shutterstock_490174816.jpg" },
+            { id: 71, name: "Coconut", category: "drinks", price: 0.8, originalPrice: 2, discount: 60, description: "Naturally sweet coconut water, served straight from green coconuts for ultimate refreshment.", image: "https://images.squarespace-cdn.com/content/v1/5c1074accc8fed6a4251da8f/1652200437658-RFWI16B6LU8U3BF7ZN9V/shutterstock_490174816.jpg" },
 
-            { id: 72, name: "Avocado Juice", category: "drinks", price: 1, originalPrice: 1.8, discount: 56, description: "Creamy avocado juice blended with milk or sugar, sometimes drizzled with honey.", image: "https://rita.com.vn/images/2020/avocado-smoothie.webp" },
+            { id: 72, name: "Avocado Juice", category: "drinks", price: 1, originalPrice: 1.8, discount: 44, description: "Creamy avocado juice blended with milk or sugar, sometimes drizzled with honey.", image: "https://rita.com.vn/images/2020/avocado-smoothie.webp" },
 
             { id: 73, name: "Dragon Fruite Juice", category: "drinks", price: 1.5, originalPrice: 3, discount: 50, description: "Mildly sweet dragon fruit juice, chilled and sometimes mixed with other fruits.", image: "https://colorfulsuperfoodie.com/wp-content/uploads/2023/07/066A4091_adobe_express.jpeg" },
 
-            { id: 74, name: "Mixed Fruit Juice", category: "drinks", price: 2, originalPrice: 3.5, discount: 57, description: "Mixed fruit juice made from seasonal fruits like mango, pineapple, or banana, served chilled.", image: "https://bestfruitatmosman.com.au/cdn/shop/products/Mixed-Fruits.jpg?v=1636609123" },
+            { id: 74, name: "Mixed Fruit Juice", category: "drinks", price: 2, originalPrice: 3.5, discount: 43, description: "Mixed fruit juice made from seasonal fruits like mango, pineapple, or banana, served chilled.", image: "https://bestfruitatmosman.com.au/cdn/shop/products/Mixed-Fruits.jpg?v=1636609123" },
 
-            { id: 75, name: "Milk Lassi", category: "drinks", price: 2, originalPrice: 3.5, discount: 57, description: "Traditional lassi made from yogurt and sugar, served chilled with nuts or saffron.", image: "https://www.indianveggiedelight.com/wp-content/uploads/2023/01/sweet-lassi-recipe-featured.jpg" },
+            { id: 75, name: "Milk Lassi", category: "drinks", price: 2, originalPrice: 3.5, discount: 43, description: "Traditional lassi made from yogurt and sugar – a cooling drink for halal food Sihanoukville meals.", image: "https://www.indianveggiedelight.com/wp-content/uploads/2023/01/sweet-lassi-recipe-featured.jpg" },
 
-            { id: 76, name: "Black Coffee", category: "drinks", price: 0.75, originalPrice: 1.8, discount: 42, description: "Strong, unsweetened black coffee brewed from roasted beans, served hot or cold.", image: "https://somedayilllearn.com/wp-content/uploads/2020/05/cup-of-black-coffee-scaled-720x540.jpeg" },
+            { id: 76, name: "Black Coffee", category: "drinks", price: 0.75, originalPrice: 1.8, discount: 58, description: "Strong, unsweetened black coffee brewed from roasted beans, served hot or cold.", image: "https://somedayilllearn.com/wp-content/uploads/2020/05/cup-of-black-coffee-scaled-720x540.jpeg" },
 
-            { id: 77, name: "Hot Coffee", category: "drinks", price: 0.75, originalPrice: 1.8, discount: 42, description: "Coffee with milk and sugar, served steaming hot for a comforting drink.", image: "https://media.istockphoto.com/id/509141291/photo/coffee-pouring-to-cup.jpg?s=612x612&w=0&k=20&c=xY0Gb5V6VlLmO6MWeyaMJlIQ_Ebt6esxrkRTr7-jtpM=" },
+            { id: 77, name: "Hot Coffee", category: "drinks", price: 0.75, originalPrice: 1.8, discount: 58, description: "Coffee with milk and sugar, served steaming hot for a comforting drink.", image: "https://media.istockphoto.com/id/509141291/photo/coffee-pouring-to-cup.jpg?s=612x612&w=0&k=20&c=xY0Gb5V6VlLmO6MWeyaMJlIQ_Ebt6esxrkRTr7-jtpM=" },
 
-            { id: 78, name: "Cold Coffee", category: "drinks", price: 0.75, originalPrice: 1.8, discount: 42, description: "Chilled coffee blended with milk, sugar, and ice cream for a creamy treat.", image: "https://www.heinens.com/content/uploads/2022/05/Mocha-Iced-Coffee-with-Vanilla-Cold-Foam-800x550-1.jpg" },
+            { id: 78, name: "Cold Coffee", category: "drinks", price: 0.75, originalPrice: 1.8, discount: 58, description: "Chilled coffee blended with milk, sugar, and ice cream for a creamy treat.", image: "https://www.heinens.com/content/uploads/2022/05/Mocha-Iced-Coffee-with-Vanilla-Cold-Foam-800x550-1.jpg" },
 
             { id: 79, name: "Black Coffee Premium", category: "drinks", price: 1.5, originalPrice: 3, discount: 50, description: "Premium black coffee brewed for bold flavor, served hot or iced.", image: "https://www.abbeyskitchen.com/wp-content/uploads/2022/05/alin-luna-t4bpI1lXVH0-unsplash-scaled.jpg" },
 
@@ -212,12 +210,14 @@ function setupEventListeners() {
 
             { id: 81, name: "Cold Coffee Premium", category: "drinks", price: 1.5, originalPrice: 3, discount: 50, description: "Chilled coffee with premium beans, milk, and ice cream for a luxurious drink.", image: "https://frombowltosoul.com/wp-content/uploads/2025/07/cold-coffee.jpg" },
 
-            { id: 82, name: "Dudh Cha (1pcs) ", category: "drinks", price: 0.8, originalPrice: 1, discount: 80, description: "Milky chai brewed with tea, sugar, and cardamom. A rich, sweet Bangladeshi favorite, served steaming hot in small cups, often paired with snacks like samosas or biscuits.", image: "https://live.staticflickr.com/961/41093853795_47e4cd703b_b.jpg" },
+            { id: 82, name: "Dudh Cha (1pcs) ", category: "drinks", price: 0.8, originalPrice: 1, discount: 20, description: "Milky chai brewed with tea, sugar, and cardamom at bangladeshi resturant in sihanoukville.", image: "https://live.staticflickr.com/961/41093853795_47e4cd703b_b.jpg" },
 
-            { id: 84, name: "Rong Cha (1pcs)", category: "drinks", price: 0.5, originalPrice: 1, discount: 50, description: "Plain black tea brewed without milk, lightly sweetened or unsweetened. Simple and refreshing, enjoyed hot in small cups during quick breaks or social gatherings across Bangladesh and India.", image: "https://projonmonews24.com/uploads/news/26828/rong-cha.jpg" },
+            { id: 84, name: "Rong Cha (1pcs)", category: "drinks", price: 0.5, originalPrice: 1, discount: 50, description: "Plain black tea brewed without milk, lightly sweetened or unsweetened at alifkh resturant sihanoukville.", image: "https://projonmonews24.com/uploads/news/26828/rong-cha.jpg" },
 
 
-];  
+];       
+        
+
         
         
 
@@ -757,4 +757,3 @@ if (!clickDiv || !hiddenDiv) {
     }
   });
 }
-
