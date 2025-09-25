@@ -1,10 +1,10 @@
 {
-  "name": "AlifKH ",
+  "name": "AlifKH",
   "short_name": "AlifKH",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#0f6425",
+  "background_color": "#088030",
+  "theme_color": "#088030",
   "icons": [
     {
       "src": "/assets/images/icon/192.png",
