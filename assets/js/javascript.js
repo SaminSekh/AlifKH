@@ -752,3 +752,152 @@ if (!clickDiv || !hiddenDiv) {
     }
   });
 }
+
+
+// Food image expand   ###################################################
+(function () {
+  if (window.__imagePreviewInitialized) {
+    console.log('Image preview already initialized.');
+    return;
+  }
+  window.__imagePreviewInitialized = true;
+
+  const MODAL_ID = '__imagePreviewModal_v2';
+  const IMG_ID = '__imagePreviewImg_v2';
+  const CLOSE_ID = '__imagePreviewClose_v2';
+
+  // remove old if any
+  document.getElementById(MODAL_ID)?.remove();
+  document.getElementById(CLOSE_ID)?.remove();
+
+  // Create modal overlay
+  const modal = document.createElement('div');
+  modal.id = MODAL_ID;
+  Object.assign(modal.style, {
+    display: 'none',
+    position: 'fixed',
+    inset: '0',
+    background: 'rgba(0,0,0,0.85)',
+    justifyContent: 'center',
+    alignItems: 'center',
+    zIndex: '2147483646',
+    cursor: 'zoom-out',
+  });
+  modal.setAttribute('role', 'dialog');
+
+  // Image inside modal (pointer-events: none so it doesn't block the close button)
+  const modalImg = document.createElement('img');
+  modalImg.id = IMG_ID;
+  Object.assign(modalImg.style, {
+    maxWidth: '90%',
+    maxHeight: '85%',
+    borderRadius: '10px',
+    boxShadow: '0 0 20px rgba(0,0,0,0.9)',
+    pointerEvents: 'none',
+    userSelect: 'none',
+  });
+
+  // Close button (fixed, above modal)
+  const closeBtn = document.createElement('button');
+  closeBtn.id = CLOSE_ID;
+  closeBtn.innerHTML = '&times;';
+  Object.assign(closeBtn.style, {
+    position: 'fixed',
+    top: '18px',
+    right: '22px',
+    color: 'white',
+    fontSize: '40px',
+    cursor: 'pointer',
+    border: 'none',
+    background: 'transparent',
+    zIndex: '2147483647',
+    padding: '4px 8px',
+    lineHeight: '1',
+  });
+
+  // append elements
+  modal.appendChild(modalImg);
+  document.body.appendChild(modal);
+  document.body.appendChild(closeBtn);
+
+  // helper: extract URL from element (checks data- attributes, inline style, computed style, or child <img>)
+  function extractImageUrl(el) {
+    if (!el) return null;
+    // dataset fallbacks
+    if (el.dataset && (el.dataset.large || el.dataset.src || el.dataset.bg)) {
+      return el.dataset.large || el.dataset.src || el.dataset.bg;
+    }
+    // inline style first
+    let bg = el.style && el.style.backgroundImage;
+    // computed style if inline empty
+    if (!bg || bg === 'none') {
+      try {
+        bg = window.getComputedStyle(el).backgroundImage;
+      } catch (err) {
+        bg = null;
+      }
+    }
+    if (bg && bg !== 'none') {
+      // extract first url(...) occurrence
+      const m = bg.match(/url\((['"]?)(.*?)\1\)/);
+      if (m) return m[2];
+    }
+    // fallback: <img> child or src attribute
+    if (el.tagName === 'IMG' && el.src) return el.src;
+    const childImg = el.querySelector && el.querySelector('img');
+    if (childImg && childImg.src) return childImg.src;
+    // last resort: attribute 'data-src' or 'src'
+    if (el.getAttribute && (el.getAttribute('data-src') || el.getAttribute('src'))) {
+      return el.getAttribute('data-src') || el.getAttribute('src');
+    }
+    return null;
+  }
+
+  // open/close
+  function openModal(url) {
+    if (!url) {
+      console.warn('No image URL found for clicked element.');
+      return;
+    }
+    modalImg.src = url;
+    modal.style.display = 'flex';
+    closeBtn.style.display = 'block';
+    document.body.style.overflow = 'hidden';
+  }
+  function closeModal() {
+    modal.style.display = 'none';
+    closeBtn.style.display = 'none';
+    modalImg.src = '';
+    document.body.style.overflow = '';
+  }
+
+  // Delegated click: works even if .item-image are added later and works from console at any time
+  document.addEventListener('click', function (ev) {
+    const clicked = ev.target.closest ? ev.target.closest('.item-image') : null;
+    if (!clicked) return;
+    ev.preventDefault();
+    const url = extractImageUrl(clicked);
+    openModal(url);
+  }, true);
+
+  // Close handlers
+  closeBtn.addEventListener('click', function (ev) {
+    ev.stopPropagation();
+    closeModal();
+  }, true);
+
+  modal.addEventListener('click', function (ev) {
+    // only close when clicking the overlay (not the image, but image has pointer-events:none so this is safe)
+    if (ev.target === modal) closeModal();
+  }, true);
+
+  // Escape key closes
+  document.addEventListener('keydown', function (ev) {
+    if (ev.key === 'Escape') closeModal();
+  });
+
+  // Hide close button initially
+  closeBtn.style.display = 'none';
+
+  console.log('Image preview initialized — click any element with class ".item-image" to open a large preview.');
+})();
