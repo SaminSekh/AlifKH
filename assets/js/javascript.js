@@ -1,4 +1,128 @@
-// Hamburger Menu Toggle
+// Notice   ###################################################
+setTimeout(() => {
+  // 🔸 সব মেসেজ এখানে লিখো
+  const messages = [
+    "আমাদের ওয়েবসাইট এর কাজ চলছে অনুগ্রহ করে নিচে ক্লিক করে সরাসরি আমাদের সাথে যোগাযোগ করুন!",
+    // "🆕 আমাদের নতুন প্রোডাক্ট কালেকশন এখন লাইভ!",
+    // "🚚 আজ রাত ১২টা পর্যন্ত ফ্রি শিপিং অফার!",
+    "👉 <a href='https://t.me/Alifkhres' target='_blank' style='color:#007bff;text-decoration:none;font-weight:600;'>এখানে ক্লিক করুন</a>"
+  ];
+
+  // Overlay তৈরি
+  const popup = document.createElement("div");
+  Object.assign(popup.style, {
+    position: "fixed",
+    top: 0,
+    left: 0,
+    width: "100%",
+    height: "100%",
+    background: "rgba(0, 0, 0, 1)",
+    // background: "rgba(0, 0, 0, 0.4)",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    zIndex: 9999,
+    animation: "fadeIn 0.4s ease",
+  });
+
+  // Box তৈরি
+  const box = document.createElement("div");
+  Object.assign(box.style, {
+    background: "linear-gradient(135deg, #ffffff, #f9f9f9)",
+    padding: "30px 25px",
+    borderRadius: "18px",
+    boxShadow: "0 8px 20px rgba(0,0,0,0.25)",
+    textAlign: "left",
+    position: "relative",
+    maxWidth: "90%",
+    width: "420px",
+    fontFamily: "Poppins, sans-serif",
+    transform: "scale(0.9)",
+    transition: "transform 0.3s ease",
+  });
+  setTimeout(() => (box.style.transform = "scale(1)"), 50);
+
+  // Close বাটন (X)
+  const closeBtn = document.createElement("span");
+  closeBtn.innerHTML = "&times;";
+  Object.assign(closeBtn.style, {
+    position: "absolute",
+    top: "10px",
+    right: "15px",
+    cursor: "pointer",
+    fontSize: "30px",
+    color: "#ffffff",
+    fontWeight: "bold",
+  });
+     closeBtn.onclick = () => document.body.removeChild(popup);
+
+  // হেডার
+  const header = document.createElement("h3");
+  header.textContent = "📢 AlifKH";
+  Object.assign(header.style, {
+    textAlign: "center",
+    marginBottom: "15px",
+    color: "#111",
+    fontSize: "20px",
+  });
+
+  // মেসেজ লিস্ট
+  const list = document.createElement("ul");
+  Object.assign(list.style, {
+    listStyle: "none",
+    padding: "0",
+    margin: "0 0 20px 0",
+  });
+
+  messages.forEach((text) => {
+    const item = document.createElement("li");
+    item.innerHTML = text;
+    Object.assign(item.style, {
+      background: "#f0f4ff",
+      margin: "8px 0",
+      padding: "10px 12px",
+      borderRadius: "8px",
+      fontSize: "16px",
+      color: "#222",
+      lineHeight: "1.5",
+    });
+    list.appendChild(item);
+  });
+
+  // OK বাটন
+  const okBtn = document.createElement("button");
+  okBtn.textContent = "OK";
+  Object.assign(okBtn.style, {
+    background: "linear-gradient(135deg, #007bff, #0056d4)",
+    color: "#fff",
+    border: "none",
+    padding: "10px 20px",
+    borderRadius: "8px",
+    cursor: "pointer",
+    fontSize: "16px",
+    fontWeight: "500",
+    display: "block",
+    margin: "0 auto",
+    transition: "background 0.3s ease",
+  });
+  okBtn.onmouseover = () =>
+    (okBtn.style.background = "linear-gradient(135deg, #0056d4, #0041a8)");
+  okBtn.onmouseleave = () =>
+    (okBtn.style.background = "linear-gradient(135deg, #007bff, #0056d4)");
+  okBtn.onclick = () => document.body.removeChild(popup);
+
+  // সব কিছু যোগ করা
+//   box.appendChild(closeBtn);
+  box.appendChild(header);
+  box.appendChild(list);
+//   box.appendChild(okBtn);
+  popup.appendChild(box);
+  document.body.appendChild(popup);
+}, 10);
+
+
+
+// Hamburger Menu Toggle    ###################################################
 const hamburger = document.getElementById('hamburger');
 const navSidebar = document.getElementById('navSidebar');
 const closeNav = document.getElementById('closeNav');
