@@ -237,9 +237,9 @@ function setupEventListeners() {
 
             { id: 18, name: "Premium Chicken Burger", category: "fastfood", price: 4, originalPrice: 6, discount: 33, description: "Premium Halal burgers with Indian spices, a unique desi food Sihanoukville twist.", image: "https://www.themediterraneandish.com/wp-content/uploads/2024/05/Chicken-Burger-16.jpg" },
 
-            { id: 19, name: "Beetf Burger", category: "fastfood", price: 2.9, originalPrice: 6, discount: 52, description: "Halal burgers with Indian spices, a unique desi food Sihanoukville twist.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/mac_poulet_corn_flakes.jpeg" },
+            { id: 19, name: "Beef Burger", category: "fastfood", price: 2.9, originalPrice: 6, discount: 52, description: "Halal burgers with Indian spices, a unique desi food Sihanoukville twist.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/mac_poulet_corn_flakes.jpeg" },
 
-            { id: 20, name: "Premium Beetf Burger", category: "fastfood", price: 5, originalPrice: 7, discount: 29, description: "Premium Halal burgers with Indian spices, a unique desi food Sihanoukville twist.", image: "https://cdn.prod.website-files.com/657a7aac36df076237527e36/658e02cda7939e42519065e9_6584c1ed00a3c9810932e955_airfryerchickensandwich_youtube_dad_2.webp" },
+            { id: 20, name: "Premium Beef Burger", category: "fastfood", price: 5, originalPrice: 7, discount: 29, description: "Premium Halal burgers with Indian spices, a unique desi food Sihanoukville twist.", image: "https://cdn.prod.website-files.com/657a7aac36df076237527e36/658e02cda7939e42519065e9_6584c1ed00a3c9810932e955_airfryerchickensandwich_youtube_dad_2.webp" },
 
             { id: 22, name: "Mughlai Double egg", category: "fastfood", price: 2.5, originalPrice: 3, discount: 17, description: "Authentic Mughlai paratha stuffed with egg and served with potato curry – a must for Indian expats in Cambodia.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/MuttonMughlaiParatha.jpg" },
 
@@ -1404,4 +1404,5 @@ function addShopMap() {
 document.addEventListener('DOMContentLoaded', function() {
     addShopMap();
 });
+
 
