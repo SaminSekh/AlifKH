@@ -2,10 +2,10 @@
 setTimeout(() => {
   // 🔸 সব মেসেজ এখানে লিখো
   const messages = [
-    "আমাদের ওয়েবসাইট এর কাজ চলছে অনুগ্রহ করে নিচে ক্লিক করে সরাসরি আমাদের সাথে যোগাযোগ করুন!",
-    // "🆕 আমাদের নতুন প্রোডাক্ট কালেকশন এখন লাইভ!",
+    "আপনাকে স্বাগতম! আলিফ কে এইচ রেস্টুরেন্টে!",
+    "ব্যবহার করুন FREE10ON10 কুপন কোড আর পেয়ে যান ১০% ডিসকাউন্ট $১০ বেশি কেনাকাটাই সমস্ত আইটেমে",
     // "🚚 আজ রাত ১২টা পর্যন্ত ফ্রি শিপিং অফার!",
-    "👉 <a href='https://t.me/Alifkhres' target='_blank' style='color:#007bff;text-decoration:none;font-weight:600;'>এখানে ক্লিক করুন</a>"
+    // "👉 <a href='https://t.me/Alifkhres' target='_blank' style='color:#007bff;text-decoration:none;font-weight:600;'>এখানে ক্লিক করুন</a>"
   ];
 
   // Overlay তৈরি
@@ -16,8 +16,7 @@ setTimeout(() => {
     left: 0,
     width: "100%",
     height: "100%",
-    background: "rgba(0, 0, 0, 1)",
-    // background: "rgba(0, 0, 0, 0.4)",
+    background: "rgba(0, 0, 0, 0.52)",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
@@ -112,10 +111,10 @@ setTimeout(() => {
   okBtn.onclick = () => document.body.removeChild(popup);
 
   // সব কিছু যোগ করা
-//   box.appendChild(closeBtn);
+  box.appendChild(closeBtn);
   box.appendChild(header);
   box.appendChild(list);
-//   box.appendChild(okBtn);
+  box.appendChild(okBtn);
   popup.appendChild(box);
   document.body.appendChild(popup);
 }, 10);
@@ -202,159 +201,163 @@ function setupEventListeners() {
 }
         
         
-         const menuItems = [
+        const menuItems = [
 
-            { id: 1, name: "Pani puri/ Fuchka (10pcs)", category: "fastfood", price: 2.5, originalPrice: 4, discount: 38, description: "Crispy Indian pani puri / fuchka served with tangy tamarind water – a popular Bangladeshi street food in Sihanoukville, perfect for halal snack lovers and Indian food tourists.", image: "https://www.seema.com/wp-content/uploads/2022/08/Pani-Poori.jpg" },
+            { id: 1, name: "Pani puri/ Fuchka (10pcs)", category: "fastfood", price: 2.3, originalPrice: 4, discount: 43, description: "Crispy Indian pani puri / fuchka served with tangy tamarind water – a popular Bangladeshi street food in Sihanoukville, perfect for halal snack lovers and Indian food tourists.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/Pani-Poori.jpg" },
 
-            { id: 2, name: "Pani puri/ Fuchka (50pcs)", category: "fastfood", price: 10, originalPrice: 20, discount: 50, description: "Party-size platter of authentic Indian & Bangladeshi fuchka, ideal for families or late-night gatherings at our 24/7 Indian restaurant Sihanoukville.", image: "https://ichef.bbci.co.uk/food/ic/food_16x9_1600/recipes/pani_puri_90458_16x9.jpg" },
+            { id: 3, name: "Dal Puri (4pcs)", category: "fastfood", price: 3.2, originalPrice: 4, discount: 20, description: "Fluffy Bengali dal puri stuffed with spiced lentils, a must-try Bangla halal food for expats craving home taste.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/66426523_384937842159724_1394540683754209280_o.jpg" },
 
-            { id: 3, name: "Dal Puri (4pcs)", category: "fastfood", price: 2.7, originalPrice: 4, discount: 33, description: "Fluffy Bengali dal puri stuffed with spiced lentils, a must-try Bangla halal food for expats craving home taste.", image: "https://www.salmathechef.com/fileadmin/user_upload/66426523_384937842159724_1394540683754209280_o.jpg" },
+            { id: 4, name: "Jhal Muri", category: "fastfood", price: 1, originalPrice: 2, discount: 50, description: "Traditional Kolkata jhal muri – spicy puffed rice mixed with vegetables and masala, a famous Indian street food Sihanoukville snack.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/Jhal-Muri-2-3.jpg" },
 
-            { id: 4, name: "Jhal Muri", category: "fastfood", price: 1, originalPrice: 2, discount: 50, description: "Traditional Kolkata jhal muri – spicy puffed rice mixed with vegetables and masala, a famous Indian street food Sihanoukville snack.", image: "https://southindianfoods.in/recipe_picture_enlarge/jhal-muri-masala-puffed-rice.jpg" },
+            { id: 5, name: "Special Jhal Muri (curry)", category: "fastfood", price: 2, originalPrice: 3, discount: 33, description: "Premium jhal muri with curry twist, bringing authentic Bangladeshi cuisine to Sihanoukville night food lovers.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/jhal-muri-masala-puffed-rice.jpg" },
 
-            { id: 5, name: "Special Jhal Muri (curry)", category: "fastfood", price: 1.5, originalPrice: 3, discount: 50, description: "Premium jhal muri with curry twist, bringing authentic Bangladeshi cuisine to Sihanoukville night food lovers.", image: "https://www.whiskaffair.com/wp-content/uploads/2020/10/Jhal-Muri-2-3.jpg" },
+            { id: 6, name: "Alur chop (5pcs)", category: "fastfood", price: 2, originalPrice: 5, discount: 60, description: "Golden potato fritters loved by Indian expats and travelers looking for budget-friendly halal snacks.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/%E0%A6%86%E0%A6%B2%E0%A7%81%E0%A6%B0_%E0%A6%9A%E0%A6%AA.jpg" },
 
-            { id: 6, name: "Alur chop (5pcs)", category: "fastfood", price: 2, originalPrice: 5, discount: 60, description: "Golden potato fritters loved by Indian expats and travelers looking for budget-friendly halal snacks.", image: "https://upload.wikimedia.org/wikipedia/commons/a/ae/%E0%A6%86%E0%A6%B2%E0%A7%81%E0%A6%B0_%E0%A6%9A%E0%A6%AA.jpg" },
+            { id: 7, name: "Piayaju (5pcs)", category: "fastfood", price: 2, originalPrice: 5, discount: 60, description: "Crunchy lentil fritters, a top pick for Pakistani expats and those exploring Sihanoukville Indian food spots.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/piaju%20(1).jpg" },
 
-            { id: 7, name: "Piayaju (5pcs)", category: "fastfood", price: 2, originalPrice: 5, discount: 60, description: "Crunchy lentil fritters, a top pick for Pakistani expats and those exploring Sihanoukville Indian food spots.", image: "https://tastycookingblog.com/wp-content/uploads/2024/10/piaju.jpg" },
+            { id: 8, name: "Beguni (5pcs)", category: "fastfood", price: 2, originalPrice: 5, discount: 60, description: "Fried eggplant slices coated in gram-flour batter – a classic Bangladeshi halal restaurant delicacy.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/img_2127.jpg" },
 
-            { id: 8, name: "Beguni (5pcs)", category: "fastfood", price: 2, originalPrice: 5, discount: 60, description: "Fried eggplant slices coated in gram-flour batter – a classic Bangladeshi halal restaurant delicacy.", image: "https://yummyfoodmadeeasy.wordpress.com/wp-content/uploads/2012/08/img_2127.jpg" },
+            { id: 9, name: "Chola Makha", category: "fastfood", price: 1, originalPrice: 2, discount: 50, description: "Spicy chickpeas tossed with herbs, a healthy Indian takeaway Sihanoukville favorite.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/4-min-chola-makha-or-black-chana-chaat-recipe-main-photo.jpg" },
 
-            { id: 9, name: "Chola Makha", category: "fastfood", price: 1, originalPrice: 2, discount: 50, description: "Spicy chickpeas tossed with herbs, a healthy Indian takeaway Sihanoukville favorite.", image: "https://img-global.cpcdn.com/recipes/7bc2a0cb09f12aba/680x781cq80/4-min-chola-makha-or-black-chana-chaat-recipe-main-photo.jpg" },
+            { id: 10, name: "Special Chola Makha", category: "fastfood", price: 2, originalPrice: 3.5, discount: 43, description: "Chola makha upgrade with extra spices,Upgraded chickpea salad for late-night 24h food delivery in Sihanoukville.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/hq720.jpg" },
 
-            { id: 10, name: "Special Chola Makha", category: "fastfood", price: 1.5, originalPrice: 3.5, discount: 57, description: "Chola makha upgrade with extra spices,Upgraded chickpea salad for late-night 24h food delivery in Sihanoukville.", image: "https://i.ytimg.com/vi/XYDm2EuOAL8/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLD6I1uEEZYTMNjPoFLlu3_PMhIc0g" },
+            { id: 11, name: "Egg Roll", category: "fastfood", price: 1.25, originalPrice: 3, discount: 58, description: "Paratha wrapped around a spiced egg omelet with onions and sauces. Hot, savory, and satisfying, served with ketchup or spicy chutney.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/Kolkata%20egg%20roll.jpg" },
 
-            { id: 11, name: "Egg Roll", category: "fastfood", price: 1.5, originalPrice: 3, discount: 50, description: "Paratha wrapped around a spiced egg omelet with onions and sauces. Hot, savory, and satisfying, served with ketchup or spicy chutney.", image: "https://1.bp.blogspot.com/-FtlrI6vhMww/X2jDWCb9zUI/AAAAAAAAMPQ/TmUrBHkFo6Ui-uPBi4D6KHKhKwq6-zebQCLcBGAsYHQ/s16000/Kolkata%2Begg%2Broll.JPG" },
+            { id: 12, name: "Premium Egg Roll", category: "fastfood", price: 2.5, originalPrice: 5, discount: 50, description: "Kolkata-style egg roll stuffed with fresh veggies – a quick Indian food delivery snack for tourists.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/californian-egg-roll-main-header-anz.jpg" },
 
-            { id: 12, name: "Premium Egg Roll", category: "fastfood", price: 2, originalPrice: 5, discount: 60, description: "Kolkata-style egg roll stuffed with fresh veggies – a quick Indian food delivery snack for tourists.", image: "https://www.unileverfoodsolutions.com.au/dam/global-ufs/mcos/anz/calcmenu/recipe/killer-recipes-update/californian-egg-roll-main-header-anz.jpg" },
+            { id: 13, name: "Chicken Roll", category: "fastfood", price: 2, originalPrice: 5, discount: 60, description: "Juicy halal chicken wrapped in soft paratha, perfect for Sihanoukville night food cravings.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/Chicken-Kathi-Roll-500x375.jpg" },
 
-            { id: 13, name: "Chicken Roll", category: "fastfood", price: 2, originalPrice: 5, discount: 60, description: "Juicy halal chicken wrapped in soft paratha, perfect for Sihanoukville night food cravings.", image: "https://madscookhouse.com/wp-content/uploads/2021/02/Chicken-Kathi-Roll-500x375.jpg" },
+            { id: 14, name: "Chow Mein (Egg)", category: "fastfood", price: 2, originalPrice: 3.5, discount: 43, description: "Stir-fried noodles with egg and vegetables, a popular Indian Chinese fusion food Sihanoukville dish.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/Cantonese-Chow-Mein-noodle-pull.jpg" },
 
-            { id: 14, name: "Chow Mein (Egg)", category: "fastfood", price: 2, originalPrice: 3.5, discount: 43, description: "Stir-fried noodles with egg and vegetables, a popular Indian Chinese fusion food Sihanoukville dish.", image: "https://takestwoeggs.com/wp-content/uploads/2025/05/Cantonese-Chow-Mein-noodle-pull.jpg" },
+            { id: 15, name: "Premium Chow Mein (Egg + Chicken)", category: "fastfood", price: 3, originalPrice: 5, discount: 40, description: "Chicken-loaded chow mein loved by late-night foodies and 24/7 Indian restaurant visitors.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/chicken-chow-mein-1.jpg" },
 
-            { id: 15, name: "Premium Chow Mein (Chicken)", category: "fastfood", price: 2.5, originalPrice: 5, discount: 50, description: "Chicken-loaded chow mein loved by late-night foodies and 24/7 Indian restaurant visitors.", image: "https://chefjar.com/wp-content/uploads/2024/09/chicken-chow-mein-1.jpg" },
+            { id: 16, name: "Egg Toast (2pcs)", category: "fastfood", price: 1.9, originalPrice: 4, discount: 53, description: "Simple yet delicious Indian breakfast Sihanoukville choice, ideal for early morning takeaway.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/Egg%20Toast%20(2pcs).jpg" },
 
-            { id: 16, name: "Egg Toast (2pcs)", category: "fastfood", price: 2, originalPrice: 4, discount: 50, description: "Simple yet delicious Indian breakfast Sihanoukville choice, ideal for early morning takeaway.", image: "https://images.heb.com/is/image/HEBGrocery/Test/sunny-side-egg-in-toast-recipe.jpg" },
+            { id: 17, name: "Chicken Burger", category: "fastfood", price: 2.5, originalPrice: 4, discount: 38, description: "Halal burgers with Indian spices, a unique desi food Sihanoukville twist.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/1725393944-moist-chicken-burgers.jpg" },
 
-            { id: 17, name: "Burger", category: "fastfood", price: 2, originalPrice: 4, discount: 50, description: "Halal burgers with Indian spices, a unique desi food Sihanoukville twist.", image: "https://www.francoislambert.one/cdn/shop/articles/mac_poulet_corn_flakes.webp?v=1723557298&width=1100" },
+            { id: 18, name: "Premium Chicken Burger", category: "fastfood", price: 4, originalPrice: 6, discount: 33, description: "Premium Halal burgers with Indian spices, a unique desi food Sihanoukville twist.", image: "https://www.themediterraneandish.com/wp-content/uploads/2024/05/Chicken-Burger-16.jpg" },
 
-            { id: 18, name: "Special Burger", category: "fastfood", price: 2.5, originalPrice: 6, discount: 58, description: "Premium Halal burgers with Indian spices, a unique desi food Sihanoukville twist.", image: "https://www.datocms-assets.com/129288/1725393944-moist-chicken-burgers.jpg" },
+            { id: 19, name: "Beetf Burger", category: "fastfood", price: 2.9, originalPrice: 6, discount: 52, description: "Halal burgers with Indian spices, a unique desi food Sihanoukville twist.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/mac_poulet_corn_flakes.jpeg" },
 
-            { id: 19, name: "Paratha (2 pcs)", category: "fastfood", price: 1.5, originalPrice: 2, discount: 25, description: "Freshly made flaky paratha, served hot at our Al-If Indian restaurant Sihanoukville.", image: "https://vegehomecooking.com/wp-content/uploads/2024/08/TriangleParathaFeaturedImage.jpg" },
+            { id: 20, name: "Premium Beetf Burger", category: "fastfood", price: 5, originalPrice: 7, discount: 29, description: "Premium Halal burgers with Indian spices, a unique desi food Sihanoukville twist.", image: "https://cdn.prod.website-files.com/657a7aac36df076237527e36/658e02cda7939e42519065e9_6584c1ed00a3c9810932e955_airfryerchickensandwich_youtube_dad_2.webp" },
 
-            { id: 20, name: "Mughlai with Potato curry", category: "fastfood", price: 2, originalPrice: 3, discount: 33, description: "Authentic Mughlai paratha stuffed with egg and served with potato curry – a must for Indian expats in Cambodia.", image: "https://machhlibabafries.com/wp-content/uploads/MuttonMughlaiParatha.jpg" },
+            { id: 22, name: "Mughlai Double egg", category: "fastfood", price: 2.5, originalPrice: 3, discount: 17, description: "Authentic Mughlai paratha stuffed with egg and served with potato curry – a must for Indian expats in Cambodia.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/MuttonMughlaiParatha.jpg" },
 
-            { id: 21, name: "Chatpati", category: "fastfood", price: 1, originalPrice: 2.5, discount: 60, description: "Tangy chickpea mix known as Bangladeshi chatpati, a street food classic from Dhaka to Sihanoukville.", image: "https://img-global.cpcdn.com/recipes/71b1c35259310cb4/680x781cq80/fry-chatpati-chaat-recipe-main-photo.jpg" },
+            { id: 23, name: "Chatpati", category: "fastfood", price: 1, originalPrice: 2.5, discount: 60, description: "Tangy chickpea mix known as Bangladeshi chatpati, a street food classic from Dhaka to Sihanoukville.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/fry-chatpati-chaat-recipe-main-photo.jpg" },
 
-            { id: 25, name: "Rice / Vat (1 person)", category: "meals", price: 0.8, originalPrice: 1.5, discount: 47, description: "Steamed rice served with side dishes – the heart of Bangladeshi cuisine Sihanoukville.", image: "https://www.indianhealthyrecipes.com/wp-content/uploads/2023/07/basmati-rice-recipe.jpg" },
+            { id: 27, name: "Rice / Vat (1 person)", category: "meals", price: 0.8, originalPrice: 1.5, discount: 47, description: "Steamed rice served with side dishes – the heart of Bangladeshi cuisine Sihanoukville.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/basmati-rice-recipe.jpg" },
 
-            { id: 26, name: "Roti", category: "meals", price: 0.4, originalPrice: 1, discount: 60, description: "Soft, round flatbread made from wheat flour, lightly roasted on a griddle in Sihanoukville. A versatile staple served with curries, vegetables, or lentils, perfect for breakfast, lunch, or dinner.", image: "https://maple.kitchen/wp-content/uploads/2024/09/ready-to-eat-roti-750x422-1.webp" },
+            { id: 28, name: "Roti (2pcs)", category: "meals", price: 0.9, originalPrice: 2, discount: 55, description: "Soft, round flatbread made from wheat flour, lightly roasted on a griddle in Sihanoukville. A versatile staple served with curries, vegetables, or lentils, perfect for breakfast, lunch, or dinner.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/Roti.jpg" },
 
-            { id: 27, name: "Mosur Dal", category: "meals", price: 0.7, originalPrice: 1, discount: 30, description: "Comforting red lentil soup loved by fans of Indian home-style cooking in Cambodia.", image: "https://www.whiskaffair.com/wp-content/uploads/2021/02/Bengali-Masoor-Dal-2-3.jpg" },
+            { id: 29, name: "Paratha (2 pcs)", category: "meals", price: 1.5, originalPrice: 2, discount: 25, description: "Freshly made flaky paratha, served hot at our Al-If Indian restaurant Sihanoukville.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/TriangleParathaFeaturedImage.jpg" },
 
-            { id: 28, name: "Vegetable", category: "meals", price: 0.8, originalPrice: 2, discount: 60, description: "Mixed vegetables cooked with cumin, turmeric, and coriander. A healthy side dish served with rice or paratha.", image: "https://greenbowl2soul.com/wp-content/uploads/2021/06/Indian-vegetable-curry.jpg" },
+            { id: 31, name: "Mosur Dal", category: "meals", price: 1, originalPrice: 2, discount: 50, description: "Comforting red lentil soup loved by fans of Indian home-style cooking in Cambodia.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/Bengali-Masoor-Dal-2-3.jpg" },
 
-            { id: 29, name: "Bharta", category: "meals", price: 0.7, originalPrice: 1.5, discount: 53, description: "Mashed vegetables, often eggplant or potato, seasoned with spices. Smoky and flavorful, perfect with rice or flatbread.", image: "https://cdn.dhakapost.com/media/imgAll/BG/2021October/received-667070851118864-20211230080946.jpeg" },
+            { id: 32, name: "Vegetable Curry", category: "meals", price: 1, originalPrice: 2.2, discount: 55, description: "Mixed vegetables cooked with cumin, turmeric, and coriander. A healthy side dish served with rice or paratha.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/Indian-vegetable-curry.jpg" },
 
-            { id: 30, name: "Beef", category: "meals", price: 3, originalPrice: 5, discount: 40, description: "Tender beef slow-cooked with cumin, coriander, and garam masala. available for 24h food delivery Sihanoukville.", image: "https://maldivescook.com/wp-content/uploads/beef-curry.jpg" },
+            { id: 33, name: "Bharta", category: "meals", price: 0.7, originalPrice: 1.5, discount: 53, description: "Mashed vegetables, often eggplant or potato, seasoned with spices. Smoky and flavorful, perfect with rice or flatbread.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/received-667070851118864-20211230080946.jpeg" },
 
-            { id: 31, name: "Mutton", category: "meals", price: 4.5, originalPrice: 6, discount: 25, description: "Slow-cooked goat meat in spiced gravy with onions and garlic. Bangla food 24h delivery Sihanoukville.", image: "https://static.toiimg.com/photo/63201465.cms" },
+            { id: 34, name: "Beef", category: "meals", price: 3, originalPrice: 5, discount: 40, description: "Tender beef slow-cooked with cumin, coriander, and garam masala. available for 24h food delivery Sihanoukville.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/beef-curry.jpg" },
 
-            { id: 32, name: "Chicken", category: "meals", price: 2.2, originalPrice: 3.5, discount: 37, description: "Chicken curry cooked with tomatoes, onions, and garam masala. Bangladeshi food 24h delivery Sihanoukville.", image: "https://www.foodandwine.com/thmb/8YAIANQTZnGpVWj2XgY0dYH1V4I=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/spicy-chicken-curry-FT-RECIPE0321-58f84fdf7b484e7f86894203eb7834e7.jpg" },
+            { id: 35, name: "Mutton", category: "meals", price: 4.5, originalPrice: 6, discount: 25, description: "Slow-cooked goat meat in spiced gravy with onions and garlic. Bangla food 24h delivery Sihanoukville.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/Mutton.png" },
 
-            { id: 33, name: "Rui Fish", category: "meals", price: 3, originalPrice: 5, discount: 40, description: "Rohu fish simmered in spiced curry with mustard oil at our 24/7 Bangladeshi restaurant.", image: "https://ajinomotobangladesh.com/wp-content/uploads/2023/01/1-4-scaled.jpg" },
+            { id: 36, name: "Chicken", category: "meals", price: 2.8, originalPrice: 3.5, discount: 20, description: "Chicken curry cooked with tomatoes, onions, and garam masala. Bangladeshi food 24h delivery Sihanoukville.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/Chicken.jpg" },
 
-            { id: 34, name: "Tangra Fish", category: "meals", price: 3, originalPrice: 5, discount: 40, description: "Tangra fish cooked in a light, spicy curry or fried with spices. Delicate and flavorful, served with rice.", image: "https://s3-ap-south-1.amazonaws.com/betterbutterbucket-silver/bethica-das15240249455ad6c6713b05c.jpeg" },
+            { id: 37, name: "Rui Fish", category: "meals", price: 3, originalPrice: 5, discount: 40, description: "Rohu fish simmered in spiced curry with mustard oil at our 24/7 Bangladeshi restaurant.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/mach.jpg" },
 
-            { id: 35, name: "Prawn Curry", category: "meals", price: 3, originalPrice: 5, discount: 40, description: "Prawns cooked in a rich, coconut-based curry. Spicy and aromatic, perfect with rice or paratha.", image: "https://foodiesterminal.com/wp-content/uploads/2018/07/prawn-curry-goan-style.jpg" },
+            { id: 38, name: "Tangra Fish", category: "meals", price: 3, originalPrice: 5, discount: 40, description: "Tangra fish cooked in a light, spicy curry or fried with spices. Delicate and flavorful, served with rice.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/bethica-das15240249455ad6c6713b05c.jpeg" },
 
-            { id: 36, name: "Beef Khichuri", category: "mealspackage", price: 4.5, originalPrice: 7, discount: 36, description: "Spiced rice and lentils cooked together with vegetables or meat. Comforting and hearty, garnished with fried onions or ghee.", image: "https://i.ytimg.com/vi/69zEKzBmw-w/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCvyLGtdmAOXsTB4277pkeHS80OSg" },
+            { id: 39, name: "Prawn Curry", category: "meals", price: 3.5, originalPrice: 5, discount: 30, description: "Prawns cooked in a rich, coconut-based curry. Spicy and aromatic, perfect with rice or paratha.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/prawn-curry-goan-style.jpg" },
 
-            { id: 37, name: "Beef Biryani", category: "mealspackage", price: 5, originalPrice: 7, discount: 29, description: "Fragrant rice layered with spiced beef and saffron. A festive biryani served with raita or salad.", image: "https://www.masala.tv/wp-content/uploads/2015/12/Beef-Biryani-Rida-Aftab.jpg" },
+            { id: 40, name: "Beef Khichuri", category: "mealspackage", price: 5, originalPrice: 7, discount: 29, description: "Spiced rice and lentils cooked together with vegetables or meat. Comforting and hearty, garnished with fried onions or ghee.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/hq720%20(1).jpg" },
 
-            { id: 38, name: "Mutton Biryani", category: "mealspackage", price: 6, originalPrice: 7.5, discount: 20, description: "Aromatic mutton biryani with caramelized onions and rich spices. A luxurious celebratory dish.", image: "https://www.cubesnjuliennes.com/wp-content/uploads/2021/03/Best-Mutton-Biryani-Recipe.jpg" },
+            { id: 41, name: "Beef Biryani", category: "mealspackage", price: 5, originalPrice: 7, discount: 29, description: "Fragrant rice layered with spiced beef and saffron. A festive biryani served with raita or salad.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/Beef-Biryani-Rida-Aftab.jpg" },
 
-            { id: 39, name: "Chicken Biryani", category: "mealspackage", price: 4, originalPrice: 6, discount: 33, description: "Chicken biryani layered with fragrant rice and marinated chicken. Loved for its rich aroma and bold flavor.", image: "https://images.food52.com/VOfOuvcQe7fBeSqixNe1L-LhUBY=/d815e816-4664-472e-990b-d880be41499f--chicken-biryani-recipe.jpg" },
+            { id: 42, name: "Mutton Biryani", category: "mealspackage", price: 6, originalPrice: 7.5, discount: 20, description: "Aromatic mutton biryani with caramelized onions and rich spices. A luxurious celebratory dish.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/Best-Mutton-Biryani-Recipe.jpg" },
 
-            { id: 40, name: "Rice+Fish+Veg+Dal", category: "mealspackage", price: 4, originalPrice: 7, discount: 43, description: "Steamed white rice served with spiced fish curry, seasonal vegetables, and comforting red lentil dal. A balanced Bangladeshi meal offering mild heat and rich, homely flavors.", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR40Sl7Wo0TwvowJYBYRYQXW3-xoFA4E8nnfQ&s" },
+            { id: 43, name: "Chicken Biryani", category: "mealspackage", price: 4, originalPrice: 6, discount: 33, description: "Chicken biryani layered with fragrant rice and marinated chicken. Loved for its rich aroma and bold flavor.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/d815e816-4664-472e-990b-d880be41499f%20-%20chicken-biryani-recipe.jpg" },
 
-            { id: 41, name: "Rice+Beef+Veg+Dal", category: "mealspackage", price: 4, originalPrice: 6, discount: 33, description: "Fluffy rice paired with slow-cooked beef curry, fresh vegetables, and hearty lentil dal. A filling, protein-rich platter with deep, aromatic spices.", image: "https://www.shutterstock.com/image-photo/traditional-nepalese-food-thali-dal-260nw-1827466619.jpg" },
+            { id: 44, name: "Rice+Fish+Veg+Dal", category: "mealspackage", price: 4, originalPrice: 7, discount: 43, description: "Steamed white rice served with spiced fish curry, seasonal vegetables, and comforting red lentil dal. A balanced Bangladeshi meal offering mild heat and rich, homely flavors.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/Rice%2BFish%2BVeg%2BDal.jpeg" },
 
-            { id: 42, name: "Rice+Mutton+Veg+Dal", category: "mealspackage", price: 5, originalPrice: 7, discount: 29, description: "Steamed rice served with tender mutton curry, mixed vegetables, and flavorful lentil dal. A classic, festive Bangladeshi combination full of rich, savory taste.", image: "https://media.sublimetrails.com/uploads/img/dal-bhat-tarkari-(2).webp" },
+            { id: 45, name: "Rice+Beef+Veg+Dal", category: "mealspackage", price: 4, originalPrice: 6, discount: 33, description: "Fluffy rice paired with slow-cooked beef curry, fresh vegetables, and hearty lentil dal. A filling, protein-rich platter with deep, aromatic spices.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/Rice%2BBeef%2BVeg%2BDal.png" },
 
-            { id: 43, name: "Rice+Chicken+Veg+Dal", category: "mealspackage", price: 3.5, originalPrice: 5, discount: 30, description: "Soft white rice, spiced chicken curry, seasonal vegetables, and lentil dal - free home delivery at sihanoukville.", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnjLvl33Dab8T3IySz7FDzzVyvAJBMMwgQkg&s" },
+            { id: 46, name: "Rice+Mutton+Veg+Dal", category: "mealspackage", price: 5, originalPrice: 7, discount: 29, description: "Steamed rice served with tender mutton curry, mixed vegetables, and flavorful lentil dal. A classic, festive Bangladeshi combination full of rich, savory taste.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/Rice%20%2B%20Mutton%20%2B%20Veg%2B%20Dal.webp" },
 
-            { id: 46, name: "Mango (1KG)", category: "fruits", price: 1.2, originalPrice: 1.5, discount: 20, description: "", image: "https://ichef.bbci.co.uk/images/ic/1040x1040/p06hk0h6.jpg" },
+            { id: 47, name: "Rice+Chicken+Veg+Dal", category: "mealspackage", price: 3.5, originalPrice: 5, discount: 30, description: "Soft white rice, spiced chicken curry, seasonal vegetables, and lentil dal - free home delivery at sihanoukville.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/Rice%2BChicken%2BVeg%2BDal.jpeg" },
 
-            { id: 47, name: "Pinapple (2pc - Medium)", category: "fruits", price: 1.5, originalPrice: 2, discount: 25, description: "", image: "https://www.thetakeout.com/img/gallery/the-storage-trick-that-makes-pineapple-effortlessly-sweeter/l-intro-1736378192.jpg" },
+            { id: 50, name: "Mango (1KG)", category: "fruits", price: 1.2, originalPrice: 1.5, discount: 20, description: "", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/p06hk0h6.jpg" },
 
-            { id: 48, name: "Apple (1KG)", category: "fruits", price: 5, originalPrice: 6, discount: 17, description: "", image: "https://hips.hearstapps.com/hmg-prod/images/apples-at-farmers-market-royalty-free-image-1627321463.jpg?crop=1xw:0.94466xh;center,top&resize=1200:*" },
+            { id: 53, name: "Grape (1KG)", category: "fruits", price: 3, originalPrice: 5, discount: 40, description: "2", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/Grape%20(1%20KG).jpg" },
 
-            { id: 49, name: "Grape (1KG)", category: "fruits", price: 5, originalPrice: 7, discount: 29, description: "", image: "https://www.seriouseats.com/thmb/XwtcUWlY3TDauWPbBiID1yZ-6Jw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1289843973-karandaev-hero-ca6df1eb21504ba0965e2319ef4c26e3.jpg" },
+            { id: 54, name: "Banana (1KG)", category: "fruits", price: 1.5, originalPrice: 3, discount: 50, description: "", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/NORMALLLL.jpg" },
 
-            { id: 50, name: "Banana (8pcs)", category: "fruits", price: 1, originalPrice: 1.5, discount: 33, description: "", image: "https://efructifera.com/wp-content/uploads/2021/07/NORMALLLL.jpg" },
+            { id: 58, name: "avocado fruit (1KG)", category: "fruits", price: 1.5, originalPrice: 3, discount: 50, description: "", image: "https://www.secretosdelsur.com/wp-content/uploads/2021/07/aguacate-3-831x554.jpg" },
 
-            { id: 54, name: "Dragon Fruite (1KG)", category: "fruits", price: 1.5, originalPrice: 3, discount: 50, description: "", image: "https://www.siciliaagrumi.it/wp-content/uploads/2021/09/dragonfruit.jpg" },
+            { id: 67, name: "Mango milak shake Juice", category: "drinks", price: 1.5, originalPrice: 3, discount: 50, description: "Sweet, thick mango juice blended from ripe mangoes – loved by Indian tourists in Sihanoukville.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/10-benefits-of-mango-juice-3.jpg" },
 
-            { id: 63, name: "Mango Juice", category: "drinks", price: 1.5, originalPrice: 3, discount: 50, description: "Sweet, thick mango juice blended from ripe mangoes – loved by Indian tourists in Sihanoukville.", image: "https://nawon.com.vn/wp-content/uploads/2019/01/10-benefits-of-mango-juice-3.jpg" },
+            { id: 70, name: "Grape Juice", category: "drinks", price: 2, originalPrice: 4, discount: 50, description: "Sweet, slightly tart grape juice, served chilled for a rich fruity taste.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/Grape%20Juice.webp" },
 
-            { id: 64, name: "Pinapple Juice", category: "drinks", price: 2, originalPrice: 3.5, discount: 43, description: "Fresh pineapple juice, sweet and tangy, served chilled with optional salt or sugar.", image: "https://www.kuvingsusa.com/cdn/shop/articles/kuvings-blog-pineapple.png?v=1750962073&width=1024" },
+            { id: 72, name: "Banana milk shake Juice", category: "drinks", price: 2, originalPrice: 3, discount: 33, description: "Creamy banana smoothie made with milk or yogurt, sweetened with honey or sugar.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/Banana%20Juice.jpeg" },
 
-            { id: 65, name: "Apple Juice", category: "drinks", price: 2.5, originalPrice: 4, discount: 38, description: "Clear, refreshing apple juice, lightly sweetened and sometimes mixed with lemon.", image: "https://images.prismic.io/goodnature/ZDIxNjE5ZTAtYjlhMi00ZTlmLTkxNTktODZiODA1YzkxNmFh_apple-juice-hero.jpg?auto=compress%2Cformat&rect=0%2C0%2C1200%2C628&w=1200&h=628&q=75" },
+            { id: 76, name: "Avocado milk shake Juice", category: "drinks", price: 1.5, originalPrice: 2, discount: 25, description: "Creamy avocado juice blended with milk or sugar, sometimes drizzled with honey.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/Avocado%20Juice.webp" },
 
-            { id: 66, name: "Grape Juice", category: "drinks", price: 2.5, originalPrice: 4, discount: 38, description: "Sweet, slightly tart grape juice, served chilled for a rich fruity taste.", image: "https://cdn.healthyrecipes101.com/recipes/images/juices/is-concord-grape-juice-healthy-clakvj5ee008kpw1b3qbf3iys.webp" },
+            { id: 78, name: "Mixed Fruit Juice", category: "drinks", price: 2, originalPrice: 3.5, discount: 43, description: "Mixed fruit juice made from seasonal fruits like mango, pineapple, or banana, served chilled.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/Mixed-Fruits.jpg" },
 
-            { id: 67, name: "Orange juice", category: "drinks", price: 1.5, originalPrice: 3, discount: 50, description: "Freshly squeezed juice from ripe oranges, naturally sweet and tangy. Served chilled for a refreshing, vitamin-rich drink that’s perfect for hot days or a healthy breakfast boost.", image: "https://greenletes.com/wp-content/uploads/2018/05/orange-juice.png" },
+            { id: 79, name: "Sweet Lassi", category: "drinks", price: 1.5, originalPrice: 3.5, discount: 57, description: "Traditional lassi made from yogurt and sugar – a cooling drink for halal food Sihanoukville meals.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/sweet-lassi-recipe-featured.jpg" },
 
-            { id: 68, name: "Banana Juice", category: "drinks", price: 1.5, originalPrice: 3, discount: 50, description: "Creamy banana smoothie made with milk or yogurt, sweetened with honey or sugar.", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsZbTWpW4byTlPa1Y52kcCBLGSw1LIfYuCYw&s" },
+            { id: 80, name: "Black Coffee", category: "drinks", price: 0.75, originalPrice: 1.8, discount: 58, description: "Strong, unsweetened black coffee brewed from roasted beans, served hot or cold.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/alin-luna-t4bpI1lXVH0-unsplash-scaled.jpg" },
 
-            { id: 69, name: "Wattermelon Juice", category: "drinks", price: 1.5, originalPrice: 3, discount: 50, description: "Light, hydrating watermelon juice, chilled with a dash of lemon or mint.", image: "https://www.thedeliciouscrescent.com/wp-content/uploads/2019/05/Watermelon-Juice-Square.jpg" },
+            { id: 81, name: "Hot Coffee", category: "drinks", price: 0.75, originalPrice: 1.8, discount: 58, description: "Coffee with milk and sugar, served steaming hot for a comforting drink.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/istockphoto-509141291-612x612.jpg" },
 
-            { id: 70, name: "Carrot Juice", category: "drinks", price: 1.5, originalPrice: 3, discount: 50, description: "Sweet carrot juice, rich in vitamins, sometimes spiced with ginger and lemon.", image: "https://www.alphafoodie.com/wp-content/uploads/2020/11/Orange-Carrot-Juice-1-of-1.jpeg" },
+            { id: 82, name: "Cold Coffee", category: "drinks", price: 0.75, originalPrice: 1.8, discount: 58, description: "Chilled coffee blended with milk, sugar, and ice cream for a creamy treat.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/Mocha-Iced-Coffee-with-Vanilla-Cold-Foam-800x550-1.jpg" },
 
-            { id: 71, name: "Coconut", category: "drinks", price: 0.8, originalPrice: 2, discount: 60, description: "Naturally sweet coconut water, served straight from green coconuts for ultimate refreshment.", image: "https://images.squarespace-cdn.com/content/v1/5c1074accc8fed6a4251da8f/1652200437658-RFWI16B6LU8U3BF7ZN9V/shutterstock_490174816.jpg" },
+            { id: 83, name: "Black Coffee Premium", category: "drinks", price: 1.5, originalPrice: 3, discount: 50, description: "Premium black coffee brewed for bold flavor, served hot or iced.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/Black%20Coffee%20Premium.png" },
 
-            { id: 72, name: "Avocado Juice", category: "drinks", price: 1, originalPrice: 1.8, discount: 44, description: "Creamy avocado juice blended with milk or sugar, sometimes drizzled with honey.", image: "https://rita.com.vn/images/2020/avocado-smoothie.webp" },
+            { id: 84, name: "Hot Coffee Premium", category: "drinks", price: 1.5, originalPrice: 3, discount: 50, description: "Premium coffee blended with milk and sugar for a smooth, rich taste.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/cup-of-black-coffee-scaled-720x540.jpeg" },
 
-            { id: 73, name: "Dragon Fruite Juice", category: "drinks", price: 1.5, originalPrice: 3, discount: 50, description: "Mildly sweet dragon fruit juice, chilled and sometimes mixed with other fruits.", image: "https://colorfulsuperfoodie.com/wp-content/uploads/2023/07/066A4091_adobe_express.jpeg" },
+            { id: 85, name: "Cold Coffee Premium", category: "drinks", price: 1.5, originalPrice: 3, discount: 50, description: "Chilled coffee with premium beans, milk, and ice cream for a luxurious drink.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/cold-coffee.jpg" },
 
-            { id: 74, name: "Mixed Fruit Juice", category: "drinks", price: 2, originalPrice: 3.5, discount: 43, description: "Mixed fruit juice made from seasonal fruits like mango, pineapple, or banana, served chilled.", image: "https://bestfruitatmosman.com.au/cdn/shop/products/Mixed-Fruits.jpg?v=1636609123" },
+            { id: 86, name: "Dudh Cha (1 Cup) ", category: "drinks", price: 0.9, originalPrice: 1, discount: 10, description: "Milky chai brewed with tea, sugar, and cardamom at bangladeshi resturant in sihanoukville.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/41093853795_47e4cd703b_b.jpg" },
 
-            { id: 75, name: "Milk Lassi", category: "drinks", price: 2, originalPrice: 3.5, discount: 43, description: "Traditional lassi made from yogurt and sugar – a cooling drink for halal food Sihanoukville meals.", image: "https://www.indianveggiedelight.com/wp-content/uploads/2023/01/sweet-lassi-recipe-featured.jpg" },
+            { id: 87, name: "Rong Cha (1 Cup)", category: "drinks", price: 0.5, originalPrice: 1, discount: 50, description: "Plain black tea brewed without milk, lightly sweetened or unsweetened at alifkh resturant sihanoukville.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/rong-cha.jpg" },
 
-            { id: 76, name: "Black Coffee", category: "drinks", price: 0.75, originalPrice: 1.8, discount: 58, description: "Strong, unsweetened black coffee brewed from roasted beans, served hot or cold.", image: "https://somedayilllearn.com/wp-content/uploads/2020/05/cup-of-black-coffee-scaled-720x540.jpeg" },
 
-            { id: 77, name: "Hot Coffee", category: "drinks", price: 0.75, originalPrice: 1.8, discount: 58, description: "Coffee with milk and sugar, served steaming hot for a comforting drink.", image: "https://media.istockphoto.com/id/509141291/photo/coffee-pouring-to-cup.jpg?s=612x612&w=0&k=20&c=xY0Gb5V6VlLmO6MWeyaMJlIQ_Ebt6esxrkRTr7-jtpM=" },
-
-            { id: 78, name: "Cold Coffee", category: "drinks", price: 0.75, originalPrice: 1.8, discount: 58, description: "Chilled coffee blended with milk, sugar, and ice cream for a creamy treat.", image: "https://www.heinens.com/content/uploads/2022/05/Mocha-Iced-Coffee-with-Vanilla-Cold-Foam-800x550-1.jpg" },
-
-            { id: 79, name: "Black Coffee Premium", category: "drinks", price: 1.5, originalPrice: 3, discount: 50, description: "Premium black coffee brewed for bold flavor, served hot or iced.", image: "https://www.abbeyskitchen.com/wp-content/uploads/2022/05/alin-luna-t4bpI1lXVH0-unsplash-scaled.jpg" },
-
-            { id: 80, name: "Hot Coffee Premium", category: "drinks", price: 1.5, originalPrice: 3, discount: 50, description: "Premium coffee blended with milk and sugar for a smooth, rich taste.", image: "https://img.freepik.com/premium-photo/hot-fresh-coffee_118124-38005.jpg" },
-
-            { id: 81, name: "Cold Coffee Premium", category: "drinks", price: 1.5, originalPrice: 3, discount: 50, description: "Chilled coffee with premium beans, milk, and ice cream for a luxurious drink.", image: "https://frombowltosoul.com/wp-content/uploads/2025/07/cold-coffee.jpg" },
-
-            { id: 82, name: "Dudh Cha (1pcs) ", category: "drinks", price: 0.8, originalPrice: 1, discount: 20, description: "Milky chai brewed with tea, sugar, and cardamom at bangladeshi resturant in sihanoukville.", image: "https://live.staticflickr.com/961/41093853795_47e4cd703b_b.jpg" },
-
-            { id: 84, name: "Rong Cha (1pcs)", category: "drinks", price: 0.5, originalPrice: 1, discount: 50, description: "Plain black tea brewed without milk, lightly sweetened or unsweetened at alifkh resturant sihanoukville.", image: "https://projonmonews24.com/uploads/news/26828/rong-cha.jpg" },
-
-
-];       
-        
+];
 
         
         
 
 
 
-// Discount codes off codes
+
+// Advanced Discount codes off codes%%%%%%%%%%%%%%%%%%% #######################
 const discountCodes = {
-    "WELCOME": 0.00001,
-    "SAVE": 0.00001,
-    "ALIFKH": 0.00001
+    // Solid discount on entire order
+    "FREE1D": { type: "fixed", value: 0.00000000001, description: "$1 off entire order" },
+    
+    // Percentage discount on entire order
+    "FREE10%": { type: "percentage", value: 0.00000000001, description: "10% off entire order" },
+    
+    // Category-specific percentage discount
+    "SPDRINK": { type: "category_percentage", value: 0.00000000001, category: "drinks", description: "10% off all drinks" },
+    
+    // Category-specific Solid discount
+    "SPDRINKS": { type: "category_fixed", value: 0.00000000001, category: "drinks", description: "$1 off all drinks" },
+    
+    // Product-specific percentage discount
+    "BIRFREE": { type: "product_percentage", value: 0.00000000001, productName: "biryani", description: "50% off biryani items" },
+    
+    // Product-specific Solid discount
+    "BIRFREE1": { type: "product_fixed", value: 0.00000000001, productName: "biryani", description: "$1 off biryani items" },
+    
+    // Minimum order percentage discount
+    "FREE10ON10": { type: "min_order_percentage", value: 10, minAmount: 10, description: "10% off on orders over $10" },
+    
+    // Minimum order Solid discount
+    "FREE10ON1": { type: "min_order_fixed", value: 1, minAmount: 0.00000000001, description: "$1 off on orders over $10" }
 };
 
-// Contact information
+// Contact information #######################
 const whatsappNumber = "+601160916195";
 const telegramId = "@alifkhres";
 
@@ -561,6 +564,12 @@ function updateCart() {
         discountCodeInput.value = '';
         appliedDiscount = 0;
         appliedDiscountCode = '';
+        
+        // Remove service charge display if it exists
+        const existingServiceCharge = document.querySelector('.service-charge-row');
+        if (existingServiceCharge) {
+            existingServiceCharge.remove();
+        }
         return;
     }
     
@@ -569,11 +578,25 @@ function updateCart() {
         
         const cartItem = document.createElement('div');
         cartItem.className = 'cart-item';
+        
+        // Calculate savings for this item
+        const menuItem = menuItems.find(mi => mi.id === item.id);
+        let savingsText = '';
+        if (menuItem && menuItem.originalPrice) {
+            const itemSavings = (menuItem.originalPrice - menuItem.price) * item.quantity;
+            if (itemSavings > 0) {
+                savingsText = `<div class="item-savings" style="color: #27ae60; font-size: 12px; margin-top: 5px;">
+                    <i class="fas fa-heart"></i> You save: $${itemSavings.toFixed(2)}
+                </div>`;
+            }
+        }
+        
         cartItem.innerHTML = `
             <div class="cart-item-image" style="background-image: url('${item.image}')"></div>
             <div class="cart-item-details">
                 <div class="cart-item-title">${item.name}</div>
                 <div class="cart-item-price">$${item.price.toFixed(2)}</div>
+                ${savingsText}
                 <div class="cart-item-controls">
                     <button class="quantity-btn decrease" data-id="${item.id}">-</button>
                     <span class="quantity">${item.quantity}</span>
@@ -585,35 +608,113 @@ function updateCart() {
         cartItems.appendChild(cartItem);
     });
     
-    const discountAmount = (subtotal * appliedDiscount) / 100;
-    const total = subtotal - discountAmount;
+    // REVALIDATE MINIMUM ORDER DISCOUNTS WHEN CART CHANGES
+    if (appliedDiscountCode && discountCodes[appliedDiscountCode]) {
+        const discount = discountCodes[appliedDiscountCode];
+        
+        // Check if it's a minimum order discount and if the condition is no longer met
+        if ((discount.type === "min_order_percentage" || discount.type === "min_order_fixed") && subtotal < discount.minAmount) {
+            // Remove the discount since minimum order condition is no longer met
+            appliedDiscount = 0;
+            appliedDiscountCode = '';
+            discountMessage.textContent = 'Minimum not reached';
+            discountMessage.style.color = '#e74c3c';
+        }
+    }
+    
+    let discountAmount = appliedDiscount;
+
+    // For percentage discounts that need recalculation when cart changes
+    if (appliedDiscountCode && discountCodes[appliedDiscountCode]) {
+        const discount = discountCodes[appliedDiscountCode];
+        if (discount.type === "percentage") {
+            discountAmount = (subtotal * discount.value) / 100;
+        }
+        // Recalculate other dynamic discounts if needed
+        else if (discount.type === "category_percentage") {
+            discountAmount = calculateCategoryDiscount(discount.category, discount.value, 'percentage');
+        }
+        else if (discount.type === "category_fixed") {
+            discountAmount = calculateCategoryDiscount(discount.category, discount.value, 'fixed');
+        }
+        else if (discount.type === "product_percentage") {
+            discountAmount = calculateProductDiscount(discount.productName, discount.value, 'percentage');
+        }
+        else if (discount.type === "product_fixed") {
+            discountAmount = calculateProductDiscount(discount.productName, discount.value, 'fixed');
+        }
+        // For minimum order discounts, recalculate only if condition is still met
+        else if (discount.type === "min_order_percentage" && subtotal >= discount.minAmount) {
+            discountAmount = (subtotal * discount.value) / 100;
+        }
+        else if (discount.type === "min_order_fixed" && subtotal >= discount.minAmount) {
+            discountAmount = discount.value;
+        }
+    }
+     
+    // Update appliedDiscount with the recalculated amount
+    appliedDiscount = discountAmount;
+
+    const totalBeforeServiceCharge = subtotal - discountAmount;
+
+    // Apply service charge if order is less than $3 (check ORIGINAL subtotal, not discounted)
+    let serviceCharge = 0;
+    if (subtotal < 3) {
+        serviceCharge = 0.80;
+    }
+    
+    const total = totalBeforeServiceCharge + serviceCharge;
     
     cartCount.textContent = cart.reduce((sum, item) => sum + item.quantity, 0);
     cartSubtotal.textContent = subtotal.toFixed(2);
     cartDiscount.textContent = discountAmount.toFixed(2);
     cartTotal.textContent = total.toFixed(2);
     
-    document.querySelectorAll('.decrease').forEach(button => {
-        button.addEventListener('click', function() {
-            const itemId = parseInt(this.getAttribute('data-id'));
-            decreaseQuantity(itemId);
-        });
-    });
     
-    document.querySelectorAll('.increase').forEach(button => {
-        button.addEventListener('click', function() {
-            const itemId = parseInt(this.getAttribute('data-id'));
-            increaseQuantity(itemId);
-        });
-    });
+    // Update the cart display to show service charge if applicable
+    const existingServiceCharge = document.querySelector('.service-charge-row');
+    if (existingServiceCharge) {
+        existingServiceCharge.remove();
+    }
     
-    document.querySelectorAll('.remove-item').forEach(button => {
-        button.addEventListener('click', function() {
-            const itemId = parseInt(this.getAttribute('data-id'));
-            removeFromCart(itemId);
+    if (serviceCharge > 0) {
+        // Add service charge row to the cart summary
+        const serviceChargeElement = document.createElement('div');
+        serviceChargeElement.className = 'service-charge-row';
+        serviceChargeElement.innerHTML = `
+            <span>$0.80 Service Charge bellow $3 order</span>
+            <span>$${serviceCharge.toFixed(2)}</span>
+        `;
+            
+            // Insert service charge before the total row
+            const cartSummary = document.querySelector('.cart-summary');
+            const cartTotalElement = document.querySelector('.cart-total');
+            if (cartSummary && cartTotalElement) {
+                cartSummary.insertBefore(serviceChargeElement, cartTotalElement);
+            }
+        }
+        
+        document.querySelectorAll('.decrease').forEach(button => {
+            button.addEventListener('click', function() {
+                const itemId = parseInt(this.getAttribute('data-id'));
+                decreaseQuantity(itemId);
+            });
         });
-    });
-}
+        
+        document.querySelectorAll('.increase').forEach(button => {
+            button.addEventListener('click', function() {
+                const itemId = parseInt(this.getAttribute('data-id'));
+                increaseQuantity(itemId);
+            });
+        });
+        
+        document.querySelectorAll('.remove-item').forEach(button => {
+            button.addEventListener('click', function() {
+                const itemId = parseInt(this.getAttribute('data-id'));
+                removeFromCart(itemId);
+            });
+        });
+    }
 
 function increaseQuantity(itemId) {
     const item = cart.find(i => i.id === itemId);
@@ -654,16 +755,123 @@ function applyDiscount() {
     }
     
     if (discountCodes[code]) {
-        appliedDiscount = discountCodes[code];
+        const discount = discountCodes[code];
         appliedDiscountCode = code;
-        discountMessage.textContent = `Discount applied: ${appliedDiscount}% off`;
+        
+        // Calculate discount based on type
+        let discountAmount = 0;
+        let discountMessageText = '';
+        
+        switch(discount.type) {
+            case "fixed":
+                discountAmount = discount.value;
+                discountMessageText = `$${discount.value} off applied!`;
+                break;
+                
+            case "percentage":
+                const subtotal = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+                discountAmount = (subtotal * discount.value) / 100;
+                discountMessageText = `${discount.value}% off applied!`;
+                break;
+                
+            case "category_percentage":
+                discountAmount = calculateCategoryDiscount(discount.category, discount.value, 'percentage');
+                discountMessageText = `${discount.value}% off ${discount.category} applied!`;
+                break;
+                
+            case "category_fixed":
+                discountAmount = calculateCategoryDiscount(discount.category, discount.value, 'fixed');
+                discountMessageText = `$${discount.value} off ${discount.category} applied!`;
+                break;
+                
+            case "product_percentage":
+                discountAmount = calculateProductDiscount(discount.productName, discount.value, 'percentage');
+                discountMessageText = `${discount.value}% off ${discount.productName} applied!`;
+                break;
+                
+            case "product_fixed":
+                discountAmount = calculateProductDiscount(discount.productName, discount.value, 'fixed');
+                discountMessageText = `$${discount.value} off ${discount.productName} applied!`;
+                break;
+                
+            case "min_order_percentage":
+                const subtotalMinPerc = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+                if (subtotalMinPerc >= discount.minAmount) {
+                    discountAmount = (subtotalMinPerc * discount.value) / 100;
+                    discountMessageText = `${discount.value}% off applied (order over $${discount.minAmount})!`;
+                } else {
+                    discountMessageText = `Add $${(discount.minAmount - subtotalMinPerc).toFixed(2)} more to get ${discount.value}% off!`;
+                    discountMessage.style.color = '#e74c3c';
+                    updateCart();
+                    return;
+                }
+                break;
+                
+            case "min_order_fixed":
+                const subtotalMinFixed = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+                if (subtotalMinFixed >= discount.minAmount) {
+                    discountAmount = discount.value;
+                    discountMessageText = `$${discount.value} off applied (order over $${discount.minAmount})!`;
+                } else {
+                    discountMessageText = `Add $${(discount.minAmount - subtotalMinFixed).toFixed(2)} more to get $${discount.value} off!`;
+                    discountMessage.style.color = '#e74c3c';
+                    updateCart();
+                    return;
+                }
+                break;
+        }
+        
+        appliedDiscount = discountAmount;
+        discountMessage.textContent = discountMessageText;
         discountMessage.style.color = '#27ae60';
         updateCart();
         saveCartToStorage();
+        
     } else {
         discountMessage.textContent = 'Invalid discount code';
         discountMessage.style.color = '#e74c3c';
     }
+}
+
+// Helper function for category discounts
+function calculateCategoryDiscount(category, value, discountType) {
+    let discountAmount = 0;
+    cart.forEach(item => {
+        const menuItem = menuItems.find(mi => mi.id === item.id);
+        if (menuItem && menuItem.category === category) {
+            if (discountType === 'percentage') {
+                discountAmount += (item.price * item.quantity * value) / 100;
+            } else if (discountType === 'fixed') {
+                // Distribute fixed discount across all items in category
+                const categoryItems = cart.filter(cartItem => {
+                    const mi = menuItems.find(m => m.id === cartItem.id);
+                    return mi && mi.category === category;
+                });
+                const totalCategoryQuantity = categoryItems.reduce((sum, catItem) => sum + catItem.quantity, 0);
+                if (totalCategoryQuantity > 0) {
+                    discountAmount += (value / totalCategoryQuantity) * item.quantity;
+                }
+            }
+        }
+    });
+    return discountAmount;
+}
+
+// Helper function for product discounts
+function calculateProductDiscount(productName, value, discountType) {
+    let discountAmount = 0;
+    cart.forEach(item => {
+        const menuItem = menuItems.find(mi => mi.id === item.id);
+        if (menuItem && menuItem.name.toLowerCase().includes(productName.toLowerCase())) {
+            if (discountType === 'percentage') {
+                discountAmount += (item.price * item.quantity * value) / 100;
+            } else if (discountType === 'fixed') {
+                // Apply fixed discount per product instance
+                discountAmount += value * item.quantity;
+            }
+        }
+    });
+    return discountAmount;
 }
 
 function showAddToCartAnimation(itemId) {
@@ -723,26 +931,149 @@ function showAddToCartAnimation(itemId) {
 // Order sending functionality (simplified - no customer info)
 function sendOrder(method) {
     const subtotal = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
-    const discountAmount = (subtotal * appliedDiscount) / 100;
-    const total = subtotal - discountAmount;
+    let discountAmount = appliedDiscount;
+    let discountDetails = [];
+
+    // Recalculate discount for order message and collect discount details
+    if (appliedDiscountCode && discountCodes[appliedDiscountCode]) {
+        const discount = discountCodes[appliedDiscountCode];
+        
+        if (discount.type === "percentage") {
+            discountAmount = (subtotal * discount.value) / 100;
+            discountDetails.push(`${discount.value}% off entire order`);
+        }
+        else if (discount.type === "fixed") {
+            discountAmount = discount.value;
+            discountDetails.push(`$${discount.value} off entire order`);
+        }
+        else if (discount.type === "category_percentage") {
+            discountAmount = calculateCategoryDiscount(discount.category, discount.value, 'percentage');
+            const categoryItems = cart.filter(item => {
+                const menuItem = menuItems.find(mi => mi.id === item.id);
+                return menuItem && menuItem.category === discount.category;
+            });
+            if (categoryItems.length > 0) {
+                discountDetails.push(`${discount.value}% off ${discount.category} category`);
+            }
+        }
+        else if (discount.type === "category_fixed") {
+            discountAmount = calculateCategoryDiscount(discount.category, discount.value, 'fixed');
+            const categoryItems = cart.filter(item => {
+                const menuItem = menuItems.find(mi => mi.id === item.id);
+                return menuItem && menuItem.category === discount.category;
+            });
+            if (categoryItems.length > 0) {
+                discountDetails.push(`$${discount.value} off ${discount.category} category`);
+            }
+        }
+        else if (discount.type === "product_percentage") {
+            discountAmount = calculateProductDiscount(discount.productName, discount.value, 'percentage');
+            const productItems = cart.filter(item => {
+                const menuItem = menuItems.find(mi => mi.id === item.id);
+                return menuItem && menuItem.name.toLowerCase().includes(discount.productName.toLowerCase());
+            });
+            if (productItems.length > 0) {
+                discountDetails.push(`${discount.value}% off ${discount.productName} items`);
+            }
+        }
+        else if (discount.type === "product_fixed") {
+            discountAmount = calculateProductDiscount(discount.productName, discount.value, 'fixed');
+            const productItems = cart.filter(item => {
+                const menuItem = menuItems.find(mi => mi.id === item.id);
+                return menuItem && menuItem.name.toLowerCase().includes(discount.productName.toLowerCase());
+            });
+            if (productItems.length > 0) {
+                discountDetails.push(`$${discount.value} off ${discount.productName} items`);
+            }
+        }
+        else if (discount.type === "min_order_percentage") {
+            const subtotalMinPerc = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+            if (subtotalMinPerc >= discount.minAmount) {
+                discountAmount = (subtotalMinPerc * discount.value) / 100;
+                discountDetails.push(`${discount.value}% off (order over $${discount.minAmount})`);
+            }
+        }
+        else if (discount.type === "min_order_fixed") {
+            const subtotalMinFixed = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+            if (subtotalMinFixed >= discount.minAmount) {
+                discountAmount = discount.value;
+                discountDetails.push(`$${discount.value} off (order over $${discount.minAmount})`);
+            }
+        }
+    }
+
+    const totalBeforeServiceCharge = subtotal - discountAmount;
     
-    let orderMessage = `🍽️ *NEW ORDER - AlifKH Restaurant* 🍽️\n\n`;
-    
-    orderMessage += `📋 *Order Details:*\n`;
-    cart.forEach(item => {
-        orderMessage += `• ${item.name} x ${item.quantity} - $${(item.price * item.quantity).toFixed(2)}\n`;
-    });
-    
-    orderMessage += `\n💰 *Payment Summary:*\n`;
-    orderMessage += `Subtotal: $${subtotal.toFixed(2)}\n`;
-    
-    if (appliedDiscount > 0) {
-        orderMessage += `Discount (${appliedDiscountCode}): -$${discountAmount.toFixed(2)}\n`;
+    // Calculate service charge (same logic as in updateCart)
+    let serviceCharge = 0;
+    if (subtotal < 4) {
+        serviceCharge = 1;
     }
     
-    orderMessage += `*Total: $${total.toFixed(2)}*\n\n`;
-    orderMessage += `⏰ *Order Time:* ${new Date().toLocaleString()}\n`;
-    orderMessage += `📦 *Order Method:* ${selectedOrderMethod.toUpperCase()}`;
+    const total = totalBeforeServiceCharge + serviceCharge;
+    
+    let orderMessage = `NEW ORDER AlifKH\n\n`;
+
+orderMessage += `📋Order Details:\n`;
+cart.forEach(item => {
+    const originalItemTotal = item.price * item.quantity;
+    let itemDiscount = 0;
+    
+    // Calculate discount per item for display
+    if (appliedDiscountCode && discountCodes[appliedDiscountCode]) {
+        const discount = discountCodes[appliedDiscountCode];
+        const menuItem = menuItems.find(mi => mi.id === item.id);
+        
+        if (discount.type === "category_percentage" && menuItem && menuItem.category === discount.category) {
+            itemDiscount = (item.price * item.quantity * discount.value) / 100;
+        }
+        else if (discount.type === "category_fixed" && menuItem && menuItem.category === discount.category) {
+            const categoryItems = cart.filter(cartItem => {
+                const mi = menuItems.find(m => m.id === cartItem.id);
+                return mi && mi.category === discount.category;
+            });
+            const totalCategoryQuantity = categoryItems.reduce((sum, catItem) => sum + catItem.quantity, 0);
+            if (totalCategoryQuantity > 0) {
+                itemDiscount = (discount.value / totalCategoryQuantity) * item.quantity;
+            }
+        }
+        else if (discount.type === "product_percentage" && menuItem && menuItem.name.toLowerCase().includes(discount.productName.toLowerCase())) {
+            itemDiscount = (item.price * item.quantity * discount.value) / 100;
+        }
+        else if (discount.type === "product_fixed" && menuItem && menuItem.name.toLowerCase().includes(discount.productName.toLowerCase())) {
+            itemDiscount = discount.value * item.quantity;
+        }
+    }
+    
+    const finalItemTotal = originalItemTotal - itemDiscount;
+    
+    if (itemDiscount > 0) {
+        orderMessage += `• ${item.name} x ${item.quantity} - $${originalItemTotal.toFixed(2)} - $${itemDiscount.toFixed(2)} discount = $${finalItemTotal.toFixed(2)}\n`;
+    } else {
+        orderMessage += `• ${item.name} x ${item.quantity} - $${finalItemTotal.toFixed(2)}\n`;
+    }
+});
+
+orderMessage += `\n💰Payment Summary:\n`;
+orderMessage += `Subtotal: $${subtotal.toFixed(2)}\n`;
+
+if (discountAmount > 0) {
+    orderMessage += `Discount (${appliedDiscountCode}): -$${discountAmount.toFixed(2)}\n`;
+    if (discountDetails.length > 0) {
+        discountDetails.forEach(detail => {
+            orderMessage += `  - ${detail}\n`;
+        });
+    }
+}
+
+// Add service charge to order message if applicable
+if (serviceCharge > 0) {
+    orderMessage += `$0.80 Service Charge bellow $3 order: $${serviceCharge.toFixed(2)}\n`;
+}
+
+orderMessage += `*Total: $${total.toFixed(2)}*\n\n`;
+orderMessage += `🎉 Discount Applied: ${appliedDiscountCode || 'None'}\n`;
+orderMessage += `🌐 alifkh.com`;
     
     // Encode the message for URL
     const encodedMessage = encodeURIComponent(orderMessage);
@@ -1025,3 +1356,52 @@ if (!clickDiv || !hiddenDiv) {
 
   console.log('Image preview initialized — click any element with class ".item-image" to open a large preview.');
 })();
+
+// ====================
+// SHOP LOCATION MAP
+// ====================
+
+function addShopMap() {
+    // Create map section
+    const mapSection = document.createElement('div');
+    mapSection.className = 'footer-section';
+    mapSection.innerHTML = `
+        <h3>Our Location</h3>
+        <div class="shop-map" style="margin-top: 15px;">
+            <div 
+                id="clickableMap" 
+                style="height: 200px; width: 100%; border-radius: 10px; overflow: hidden; border: 2px solid #ddd; background: white; cursor: pointer; position: relative;"
+            >
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15665.36608150115!2d103.524178!3d10.609318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTDCsDM2JzMzLjUiTiAxMDPCsDMxJzI3LjAiRQ!5e0!3m2!1sen!2skh!4v1700000000000" 
+                    width="100%" 
+                    height="100%" 
+                    style="border:0; pointer-events: none;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: transparent; z-index: 10;"></div>
+            </div>
+            <p style="text-align: center; margin-top: 8px; font-size: 12px; color: #666;">Click on map to open location</p>
+        </div>
+    `;
+
+    // Add to footer - after opening hours
+    const footerContent = document.querySelector('.footer-content');
+    const openingHours = document.querySelector('.footer-section:last-child');
+    
+    if (footerContent && openingHours) {
+        footerContent.appendChild(mapSection);
+        
+        // Add click event to the map
+        document.getElementById('clickableMap').addEventListener('click', function() {
+            window.open('https://maps.app.goo.gl/aEiue5hDqC8z3TW38', '_blank');
+        });
+    }
+}
+
+// Initialize map when page loads
+document.addEventListener('DOMContentLoaded', function() {
+    addShopMap();
+});
