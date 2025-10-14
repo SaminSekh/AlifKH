@@ -229,15 +229,15 @@ header {
         }
 
         .carousel-item:nth-child(1) {
-            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://media-cdn2.greatbritishchefs.com/media/ribbanef/img81602.whqc_1426x713q80.jpg');
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://static.toiimg.com/photo/87282159.cms');
         }
 
         .carousel-item:nth-child(2) {
-            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://media.istockphoto.com/id/1152493500/photo/authentic-indian-dishes-and-snacks.jpg?s=612x612&w=0&k=20&c=IF969JnN1lKLMHyZ_Sc0q7beVYOmWAOOCja_UeMSOv0=');
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://tb-static.uber.com/prod/image-proc/processed_images/12dd694dbe86ead52be852cff7373068/30be7d11a3ed6f6183354d1933fbb6c7.jpeg');
         }
 
         .carousel-item:nth-child(3) {
-            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://www.mrbeastburger.com/wp-content/uploads/20201029-MrBeast_NoChris_WebBanner-1920x600-1.png');
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://emofly.b-cdn.net/hbd_exvhac6ayb3ZKT/width:3840/plain/https://storage.googleapis.com/takeapp/media/cm7ek6s42000803jpekm8942f.jpg');
         }
 
         .carousel-caption {
@@ -700,6 +700,16 @@ header {
             background-color: var(--secondary);
         }
 
+.service-charge-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    padding: 4px 0;
+    color: #e74c3c;
+    font-size: 0.9em;
+    border-bottom: 1px solid #eee;
+}
+        
         /* Customer Info Form Styles */
 .customer-info {
     margin: 20px 0;
