@@ -299,7 +299,7 @@ function setupEventListeners() {
 
             { id: 72, name: "Banana milk shake Juice", category: "drinks", price: 2, originalPrice: 3, discount: 33, description: "Creamy banana smoothie made with milk or yogurt, sweetened with honey or sugar.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/Banana%20Juice.jpeg" },
 
-            { id: 76, name: "Avocado milk shake Juice", category: "drinks", price: 1.5, originalPrice: 2, discount: 25, description: "Creamy avocado juice blended with milk or sugar, sometimes drizzled with honey.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/Avocado%20Juice.webp" },
+            { id: 76, name: "Avocado milk shake Juice", category: "drinks", price: 2, originalPrice: 3.5, discount: 43, description: "Creamy avocado juice blended with milk or sugar, sometimes drizzled with honey.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/Avocado%20Juice.webp" },
 
             { id: 78, name: "Mixed Fruit Juice", category: "drinks", price: 2, originalPrice: 3.5, discount: 43, description: "Mixed fruit juice made from seasonal fruits like mango, pineapple, or banana, served chilled.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/Mixed-Fruits.jpg" },
 
@@ -323,7 +323,6 @@ function setupEventListeners() {
 
 
 ];
-
         
         
 
@@ -1405,3 +1404,4 @@ function addShopMap() {
 document.addEventListener('DOMContentLoaded', function() {
     addShopMap();
 });
+
