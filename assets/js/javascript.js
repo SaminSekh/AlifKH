@@ -239,7 +239,7 @@ function setupEventListeners() {
 
             { id: 19, name: "Beef Burger", category: "fastfood", price: 2.9, originalPrice: 6, discount: 52, description: "Halal burgers with Indian spices, a unique desi food Sihanoukville twist.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/mac_poulet_corn_flakes.jpeg" },
 
-            { id: 20, name: "Premium Beef Burger", category: "fastfood", price: 5, originalPrice: 7, discount: 29, description: "Premium Halal burgers with Indian spices, a unique desi food Sihanoukville twist.", image: "https://cdn.prod.website-files.com/657a7aac36df076237527e36/658e02cda7939e42519065e9_6584c1ed00a3c9810932e955_airfryerchickensandwich_youtube_dad_2.webp" },
+            { id: 20, name: "Premium Beet Burger", category: "fastfood", price: 5, originalPrice: 7, discount: 29, description: "Premium Halal burgers with Indian spices, a unique desi food Sihanoukville twist.", image: "https://cdn.prod.website-files.com/657a7aac36df076237527e36/658e02cda7939e42519065e9_6584c1ed00a3c9810932e955_airfryerchickensandwich_youtube_dad_2.webp" },
 
             { id: 22, name: "Mughlai Double egg", category: "fastfood", price: 2.5, originalPrice: 3, discount: 17, description: "Authentic Mughlai paratha stuffed with egg and served with potato curry – a must for Indian expats in Cambodia.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/MuttonMughlaiParatha.jpg" },
 
@@ -251,75 +251,79 @@ function setupEventListeners() {
 
             { id: 29, name: "Paratha (2 pcs)", category: "meals", price: 1.5, originalPrice: 2, discount: 25, description: "Freshly made flaky paratha, served hot at our Al-If Indian restaurant Sihanoukville.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/TriangleParathaFeaturedImage.jpg" },
 
-            { id: 31, name: "Mosur Dal", category: "meals", price: 1, originalPrice: 2, discount: 50, description: "Comforting red lentil soup loved by fans of Indian home-style cooking in Cambodia.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/Bengali-Masoor-Dal-2-3.jpg" },
+            { id: 30, name: "Egg omelet (1pcs)", category: "meals", price: 1.1, originalPrice: 2, discount: 45, description: "Fluffy egg omelet layered with spices and herbs — a homestyle favorite enjoyed from Dhaka breakfast tables to Sihanoukville cafés.", image: "https://i.guim.co.uk/img/media/352fcb591bc9fd92f97f51913724b0530bebe3e5/0_2429_3567_2139/master/3567.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=f5872b12dae2f74cdc36b74bcbb16db0" },
 
-            { id: 32, name: "Vegetable Curry", category: "meals", price: 1, originalPrice: 2.2, discount: 55, description: "Mixed vegetables cooked with cumin, turmeric, and coriander. A healthy side dish served with rice or paratha.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/Indian-vegetable-curry.jpg" },
+            { id: 31, name: "Boiled Egg (4pcs)", category: "meals", price: 2, originalPrice: 2.5, discount: 20, description: "A good source of calcium, iron, vitamin A, and vitamin D. Eating eggs is a great way to raise HDL cholesterol (high-density lipoprotein). ", image: "https://www.foodtasticmom.com/wp-content/uploads/2016/10/easyeggs21.jpg" },
 
-            { id: 33, name: "Bharta", category: "meals", price: 0.7, originalPrice: 1.5, discount: 53, description: "Mashed vegetables, often eggplant or potato, seasoned with spices. Smoky and flavorful, perfect with rice or flatbread.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/received-667070851118864-20211230080946.jpeg" },
+            { id: 32, name: "Mosur Dal", category: "meals", price: 1, originalPrice: 2, discount: 50, description: "Comforting red lentil soup loved by fans of Indian home-style cooking in Cambodia.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/Bengali-Masoor-Dal-2-3.jpg" },
 
-            { id: 34, name: "Beef", category: "meals", price: 3, originalPrice: 5, discount: 40, description: "Tender beef slow-cooked with cumin, coriander, and garam masala. available for 24h food delivery Sihanoukville.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/beef-curry.jpg" },
+            { id: 33, name: "Vegetable Curry", category: "meals", price: 1, originalPrice: 2.2, discount: 55, description: "Mixed vegetables cooked with cumin, turmeric, and coriander. A healthy side dish served with rice or paratha.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/Indian-vegetable-curry.jpg" },
 
-            { id: 35, name: "Mutton", category: "meals", price: 4.5, originalPrice: 6, discount: 25, description: "Slow-cooked goat meat in spiced gravy with onions and garlic. Bangla food 24h delivery Sihanoukville.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/Mutton.png" },
+            { id: 34, name: "Bharta", category: "meals", price: 0.7, originalPrice: 1.5, discount: 53, description: "Mashed vegetables, often eggplant or potato, seasoned with spices. Smoky and flavorful, perfect with rice or flatbread.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/received-667070851118864-20211230080946.jpeg" },
 
-            { id: 36, name: "Chicken", category: "meals", price: 2.8, originalPrice: 3.5, discount: 20, description: "Chicken curry cooked with tomatoes, onions, and garam masala. Bangladeshi food 24h delivery Sihanoukville.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/Chicken.jpg" },
+            { id: 35, name: "Beef", category: "meals", price: 3, originalPrice: 5, discount: 40, description: "Tender beef slow-cooked with cumin, coriander, and garam masala. available for 24h food delivery Sihanoukville.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/beef-curry.jpg" },
 
-            { id: 37, name: "Rui Fish", category: "meals", price: 3, originalPrice: 5, discount: 40, description: "Rohu fish simmered in spiced curry with mustard oil at our 24/7 Bangladeshi restaurant.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/mach.jpg" },
+            { id: 36, name: "Mutton", category: "meals", price: 4.5, originalPrice: 6, discount: 25, description: "Slow-cooked goat meat in spiced gravy with onions and garlic. Bangla food 24h delivery Sihanoukville.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/Mutton.png" },
 
-            { id: 38, name: "Tangra Fish", category: "meals", price: 3, originalPrice: 5, discount: 40, description: "Tangra fish cooked in a light, spicy curry or fried with spices. Delicate and flavorful, served with rice.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/bethica-das15240249455ad6c6713b05c.jpeg" },
+            { id: 37, name: "Chicken", category: "meals", price: 2.8, originalPrice: 3.5, discount: 20, description: "Chicken curry cooked with tomatoes, onions, and garam masala. Bangladeshi food 24h delivery Sihanoukville.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/Chicken.jpg" },
 
-            { id: 39, name: "Prawn Curry", category: "meals", price: 3.5, originalPrice: 5, discount: 30, description: "Prawns cooked in a rich, coconut-based curry. Spicy and aromatic, perfect with rice or paratha.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/prawn-curry-goan-style.jpg" },
+            { id: 38, name: "Rui Fish", category: "meals", price: 3, originalPrice: 5, discount: 40, description: "Rohu fish simmered in spiced curry with mustard oil at our 24/7 Bangladeshi restaurant.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/mach.jpg" },
 
-            { id: 40, name: "Beef Khichuri", category: "mealspackage", price: 5, originalPrice: 7, discount: 29, description: "Spiced rice and lentils cooked together with vegetables or meat. Comforting and hearty, garnished with fried onions or ghee.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/hq720%20(1).jpg" },
+            { id: 39, name: "Tangra Fish", category: "meals", price: 3, originalPrice: 5, discount: 40, description: "Tangra fish cooked in a light, spicy curry or fried with spices. Delicate and flavorful, served with rice.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/bethica-das15240249455ad6c6713b05c.jpeg" },
 
-            { id: 41, name: "Beef Biryani", category: "mealspackage", price: 5, originalPrice: 7, discount: 29, description: "Fragrant rice layered with spiced beef and saffron. A festive biryani served with raita or salad.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/Beef-Biryani-Rida-Aftab.jpg" },
+            { id: 40, name: "Prawn Curry", category: "meals", price: 3.5, originalPrice: 5, discount: 30, description: "Prawns cooked in a rich, coconut-based curry. Spicy and aromatic, perfect with rice or paratha.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/prawn-curry-goan-style.jpg" },
 
-            { id: 42, name: "Mutton Biryani", category: "mealspackage", price: 6, originalPrice: 7.5, discount: 20, description: "Aromatic mutton biryani with caramelized onions and rich spices. A luxurious celebratory dish.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/Best-Mutton-Biryani-Recipe.jpg" },
+            { id: 41, name: "Beef Khichuri", category: "mealspackage", price: 5, originalPrice: 7, discount: 29, description: "Spiced rice and lentils cooked together with vegetables or meat. Comforting and hearty, garnished with fried onions or ghee.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/hq720%20(1).jpg" },
 
-            { id: 43, name: "Chicken Biryani", category: "mealspackage", price: 4, originalPrice: 6, discount: 33, description: "Chicken biryani layered with fragrant rice and marinated chicken. Loved for its rich aroma and bold flavor.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/d815e816-4664-472e-990b-d880be41499f%20-%20chicken-biryani-recipe.jpg" },
+            { id: 42, name: "Beef Biryani", category: "mealspackage", price: 5, originalPrice: 7, discount: 29, description: "Fragrant rice layered with spiced beef and saffron. A festive biryani served with raita or salad.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/Beef-Biryani-Rida-Aftab.jpg" },
 
-            { id: 44, name: "Rice+Fish+Veg+Dal", category: "mealspackage", price: 4, originalPrice: 7, discount: 43, description: "Steamed white rice served with spiced fish curry, seasonal vegetables, and comforting red lentil dal. A balanced Bangladeshi meal offering mild heat and rich, homely flavors.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/Rice%2BFish%2BVeg%2BDal.jpeg" },
+            { id: 43, name: "Mutton Biryani", category: "mealspackage", price: 6, originalPrice: 7.5, discount: 20, description: "Aromatic mutton biryani with caramelized onions and rich spices. A luxurious celebratory dish.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/Best-Mutton-Biryani-Recipe.jpg" },
 
-            { id: 45, name: "Rice+Beef+Veg+Dal", category: "mealspackage", price: 4, originalPrice: 6, discount: 33, description: "Fluffy rice paired with slow-cooked beef curry, fresh vegetables, and hearty lentil dal. A filling, protein-rich platter with deep, aromatic spices.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/Rice%2BBeef%2BVeg%2BDal.png" },
+            { id: 44, name: "Chicken Biryani", category: "mealspackage", price: 4, originalPrice: 6, discount: 33, description: "Chicken biryani layered with fragrant rice and marinated chicken. Loved for its rich aroma and bold flavor.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/d815e816-4664-472e-990b-d880be41499f%20-%20chicken-biryani-recipe.jpg" },
 
-            { id: 46, name: "Rice+Mutton+Veg+Dal", category: "mealspackage", price: 5, originalPrice: 7, discount: 29, description: "Steamed rice served with tender mutton curry, mixed vegetables, and flavorful lentil dal. A classic, festive Bangladeshi combination full of rich, savory taste.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/Rice%20%2B%20Mutton%20%2B%20Veg%2B%20Dal.webp" },
+            { id: 45, name: "Rice+Fish+Veg+Dal", category: "mealspackage", price: 4, originalPrice: 7, discount: 43, description: "Steamed white rice served with spiced fish curry, seasonal vegetables, and comforting red lentil dal. A balanced Bangladeshi meal offering mild heat and rich, homely flavors.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/Rice%2BFish%2BVeg%2BDal.jpeg" },
 
-            { id: 47, name: "Rice+Chicken+Veg+Dal", category: "mealspackage", price: 3.5, originalPrice: 5, discount: 30, description: "Soft white rice, spiced chicken curry, seasonal vegetables, and lentil dal - free home delivery at sihanoukville.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/Rice%2BChicken%2BVeg%2BDal.jpeg" },
+            { id: 46, name: "Rice+Beef+Veg+Dal", category: "mealspackage", price: 4, originalPrice: 6, discount: 33, description: "Fluffy rice paired with slow-cooked beef curry, fresh vegetables, and hearty lentil dal. A filling, protein-rich platter with deep, aromatic spices.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/Rice%2BBeef%2BVeg%2BDal.png" },
 
-            { id: 50, name: "Mango (1KG)", category: "fruits", price: 1.2, originalPrice: 1.5, discount: 20, description: "", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/p06hk0h6.jpg" },
+            { id: 47, name: "Rice+Mutton+Veg+Dal", category: "mealspackage", price: 5, originalPrice: 7, discount: 29, description: "Steamed rice served with tender mutton curry, mixed vegetables, and flavorful lentil dal. A classic, festive Bangladeshi combination full of rich, savory taste.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/Rice%20%2B%20Mutton%20%2B%20Veg%2B%20Dal.webp" },
 
-            { id: 53, name: "Grape (1KG)", category: "fruits", price: 3, originalPrice: 5, discount: 40, description: "2", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/Grape%20(1%20KG).jpg" },
+            { id: 48, name: "Rice+Chicken+Veg+Dal", category: "mealspackage", price: 3.5, originalPrice: 5, discount: 30, description: "Soft white rice, spiced chicken curry, seasonal vegetables, and lentil dal - free home delivery at sihanoukville.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/Rice%2BChicken%2BVeg%2BDal.jpeg" },
 
-            { id: 54, name: "Banana (1KG)", category: "fruits", price: 1.5, originalPrice: 3, discount: 50, description: "", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/NORMALLLL.jpg" },
+            { id: 51, name: "Mango (1KG)", category: "fruits", price: 1.2, originalPrice: 1.5, discount: 20, description: "", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/p06hk0h6.jpg" },
 
-            { id: 58, name: "avocado fruit (1KG)", category: "fruits", price: 1.5, originalPrice: 3, discount: 50, description: "", image: "https://www.secretosdelsur.com/wp-content/uploads/2021/07/aguacate-3-831x554.jpg" },
+            { id: 54, name: "Grape (1KG)", category: "fruits", price: 3, originalPrice: 5, discount: 40, description: "2", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/Grape%20(1%20KG).jpg" },
 
-            { id: 67, name: "Mango milak shake Juice", category: "drinks", price: 1.5, originalPrice: 3, discount: 50, description: "Sweet, thick mango juice blended from ripe mangoes – loved by Indian tourists in Sihanoukville.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/10-benefits-of-mango-juice-3.jpg" },
+            { id: 55, name: "Banana (1KG)", category: "fruits", price: 1.5, originalPrice: 3, discount: 50, description: "", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/NORMALLLL.jpg" },
 
-            { id: 70, name: "Grape Juice", category: "drinks", price: 2, originalPrice: 4, discount: 50, description: "Sweet, slightly tart grape juice, served chilled for a rich fruity taste.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/Grape%20Juice.webp" },
+            { id: 59, name: "avocado fruit (1KG)", category: "fruits", price: 1.5, originalPrice: 3, discount: 50, description: "", image: "https://www.secretosdelsur.com/wp-content/uploads/2021/07/aguacate-3-831x554.jpg" },
 
-            { id: 72, name: "Banana milk shake Juice", category: "drinks", price: 2, originalPrice: 3, discount: 33, description: "Creamy banana smoothie made with milk or yogurt, sweetened with honey or sugar.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/Banana%20Juice.jpeg" },
+            { id: 68, name: "Mango milak shake Juice", category: "drinks", price: 1.5, originalPrice: 3, discount: 50, description: "Sweet, thick mango juice blended from ripe mangoes – loved by Indian tourists in Sihanoukville.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/10-benefits-of-mango-juice-3.jpg" },
 
-            { id: 76, name: "Avocado milk shake Juice", category: "drinks", price: 2, originalPrice: 3.5, discount: 43, description: "Creamy avocado juice blended with milk or sugar, sometimes drizzled with honey.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/Avocado%20Juice.webp" },
+            { id: 71, name: "Grape Juice", category: "drinks", price: 2, originalPrice: 4, discount: 50, description: "Sweet, slightly tart grape juice, served chilled for a rich fruity taste.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/Grape%20Juice.webp" },
 
-            { id: 78, name: "Mixed Fruit Juice", category: "drinks", price: 2, originalPrice: 3.5, discount: 43, description: "Mixed fruit juice made from seasonal fruits like mango, pineapple, or banana, served chilled.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/Mixed-Fruits.jpg" },
+            { id: 73, name: "Banana milk shake Juice", category: "drinks", price: 2, originalPrice: 3, discount: 33, description: "Creamy banana smoothie made with milk or yogurt, sweetened with honey or sugar.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/Banana%20Juice.jpeg" },
 
-            { id: 79, name: "Sweet Lassi", category: "drinks", price: 1.5, originalPrice: 3.5, discount: 57, description: "Traditional lassi made from yogurt and sugar – a cooling drink for halal food Sihanoukville meals.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/sweet-lassi-recipe-featured.jpg" },
+            { id: 77, name: "Avocado milk shake Juice", category: "drinks", price: 2, originalPrice: 3.5, discount: 43, description: "Creamy avocado juice blended with milk or sugar, sometimes drizzled with honey.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/Avocado%20Juice.webp" },
 
-            { id: 80, name: "Black Coffee", category: "drinks", price: 0.75, originalPrice: 1.8, discount: 58, description: "Strong, unsweetened black coffee brewed from roasted beans, served hot or cold.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/alin-luna-t4bpI1lXVH0-unsplash-scaled.jpg" },
+            { id: 79, name: "Mixed Fruit Juice", category: "drinks", price: 2, originalPrice: 3.5, discount: 43, description: "Mixed fruit juice made from seasonal fruits like mango, pineapple, or banana, served chilled.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/Mixed-Fruits.jpg" },
 
-            { id: 81, name: "Hot Coffee", category: "drinks", price: 0.75, originalPrice: 1.8, discount: 58, description: "Coffee with milk and sugar, served steaming hot for a comforting drink.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/istockphoto-509141291-612x612.jpg" },
+            { id: 80, name: "Sweet Lassi", category: "drinks", price: 1.5, originalPrice: 3.5, discount: 57, description: "Traditional lassi made from yogurt and sugar – a cooling drink for halal food Sihanoukville meals.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/sweet-lassi-recipe-featured.jpg" },
 
-            { id: 82, name: "Cold Coffee", category: "drinks", price: 0.75, originalPrice: 1.8, discount: 58, description: "Chilled coffee blended with milk, sugar, and ice cream for a creamy treat.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/Mocha-Iced-Coffee-with-Vanilla-Cold-Foam-800x550-1.jpg" },
+            { id: 81, name: "Black Coffee", category: "drinks", price: 0.75, originalPrice: 1.8, discount: 58, description: "Strong, unsweetened black coffee brewed from roasted beans, served hot or cold.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/alin-luna-t4bpI1lXVH0-unsplash-scaled.jpg" },
 
-            { id: 83, name: "Black Coffee Premium", category: "drinks", price: 1.5, originalPrice: 3, discount: 50, description: "Premium black coffee brewed for bold flavor, served hot or iced.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/Black%20Coffee%20Premium.png" },
+            { id: 82, name: "Hot Coffee", category: "drinks", price: 0.75, originalPrice: 1.8, discount: 58, description: "Coffee with milk and sugar, served steaming hot for a comforting drink.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/istockphoto-509141291-612x612.jpg" },
 
-            { id: 84, name: "Hot Coffee Premium", category: "drinks", price: 1.5, originalPrice: 3, discount: 50, description: "Premium coffee blended with milk and sugar for a smooth, rich taste.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/cup-of-black-coffee-scaled-720x540.jpeg" },
+            { id: 83, name: "Cold Coffee", category: "drinks", price: 0.75, originalPrice: 1.8, discount: 58, description: "Chilled coffee blended with milk, sugar, and ice cream for a creamy treat.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/Mocha-Iced-Coffee-with-Vanilla-Cold-Foam-800x550-1.jpg" },
 
-            { id: 85, name: "Cold Coffee Premium", category: "drinks", price: 1.5, originalPrice: 3, discount: 50, description: "Chilled coffee with premium beans, milk, and ice cream for a luxurious drink.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/cold-coffee.jpg" },
+            { id: 84, name: "Black Coffee Premium", category: "drinks", price: 1.5, originalPrice: 3, discount: 50, description: "Premium black coffee brewed for bold flavor, served hot or iced.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/Black%20Coffee%20Premium.png" },
 
-            { id: 86, name: "Dudh Cha (1 Cup) ", category: "drinks", price: 0.9, originalPrice: 1, discount: 10, description: "Milky chai brewed with tea, sugar, and cardamom at bangladeshi resturant in sihanoukville.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/41093853795_47e4cd703b_b.jpg" },
+            { id: 85, name: "Hot Coffee Premium", category: "drinks", price: 1.5, originalPrice: 3, discount: 50, description: "Premium coffee blended with milk and sugar for a smooth, rich taste.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/cup-of-black-coffee-scaled-720x540.jpeg" },
 
-            { id: 87, name: "Rong Cha (1 Cup)", category: "drinks", price: 0.5, originalPrice: 1, discount: 50, description: "Plain black tea brewed without milk, lightly sweetened or unsweetened at alifkh resturant sihanoukville.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/rong-cha.jpg" },
+            { id: 86, name: "Cold Coffee Premium", category: "drinks", price: 1.5, originalPrice: 3, discount: 50, description: "Chilled coffee with premium beans, milk, and ice cream for a luxurious drink.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/cold-coffee.jpg" },
+
+            { id: 87, name: "Dudh Cha (1 Cup) ", category: "drinks", price: 0.9, originalPrice: 1, discount: 10, description: "Milky chai brewed with tea, sugar, and cardamom at bangladeshi resturant in sihanoukville.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/41093853795_47e4cd703b_b.jpg" },
+
+            { id: 88, name: "Rong Cha (1 Cup)", category: "drinks", price: 0.5, originalPrice: 1, discount: 50, description: "Plain black tea brewed without milk, lightly sweetened or unsweetened at alifkh resturant sihanoukville.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/rong-cha.jpg" },
 
 
 ];
@@ -1404,6 +1408,7 @@ function addShopMap() {
 document.addEventListener('DOMContentLoaded', function() {
     addShopMap();
 });
+
 
 
 
