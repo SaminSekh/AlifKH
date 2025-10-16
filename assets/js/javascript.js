@@ -307,7 +307,7 @@ function setupEventListeners() {
 
             { id: 79, name: "Mixed Fruit Juice", category: "drinks", price: 2, originalPrice: 3.5, discount: 43, description: "Mixed fruit juice made from seasonal fruits like mango, pineapple, or banana, served chilled.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/Mixed-Fruits.jpg" },
 
-            { id: 80, name: "Sweet Lassi", category: "drinks", price: 1.5, originalPrice: 3.5, discount: 57, description: "Traditional lassi made from yogurt and sugar – a cooling drink for halal food Sihanoukville meals.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/sweet-lassi-recipe-featured.jpg" },
+            { id: 80, name: "Sweet Lassi", category: "drinks", price: 1.25, originalPrice: 3.5, discount: 64, description: "Traditional lassi made from yogurt and sugar – a cooling drink for halal food Sihanoukville meals.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/sweet-lassi-recipe-featured.jpg" },
 
             { id: 81, name: "Black Coffee", category: "drinks", price: 0.75, originalPrice: 1.8, discount: 58, description: "Strong, unsweetened black coffee brewed from roasted beans, served hot or cold.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/alin-luna-t4bpI1lXVH0-unsplash-scaled.jpg" },
 
@@ -1408,6 +1408,7 @@ function addShopMap() {
 document.addEventListener('DOMContentLoaded', function() {
     addShopMap();
 });
+
 
 
 
