@@ -1353,6 +1353,30 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+// Lazy load *********************************************************************
+document.addEventListener("DOMContentLoaded", () => {
+  const images = document.querySelectorAll(".menu-img");
+
+  images.forEach(img => {
+    const src = img.getAttribute("src");
+    img.setAttribute("data-src", src);
+    img.removeAttribute("src");
+  });
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const img = entry.target;
+        img.src = img.dataset.src;
+        img.removeAttribute("data-src");
+        observer.unobserve(img);
+      }
+    });
+  });
+
+  images.forEach(img => observer.observe(img));
+});
+
 
 
 
