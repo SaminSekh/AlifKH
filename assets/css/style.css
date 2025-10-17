@@ -313,6 +313,16 @@ header {
             color: #777;
         }
 
+        .search-section {
+         position: sticky;
+         top: 0;
+         z-index: 1000;
+         background: #fff; /* keep background solid */
+         padding: 10px 0;
+       }
+
+.search-section { top: 60px; }
+
         /* Categories */
         .categories {
             padding: 0 5% 40px;
@@ -938,3 +948,4 @@ header {
             }
         }
    
+
