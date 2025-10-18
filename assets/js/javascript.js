@@ -952,8 +952,8 @@ function sendOrder(method) {
     
     // Calculate service charge (same logic as in updateCart)
     let serviceCharge = 0;
-    if (subtotal < 4) {
-        serviceCharge = 1;
+    if (subtotal < 2.99) {
+        serviceCharge = 0.80;
     }
     
     const total = totalBeforeServiceCharge + serviceCharge;
@@ -1376,6 +1376,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   images.forEach(img => observer.observe(img));
 });
+
 
 
 
