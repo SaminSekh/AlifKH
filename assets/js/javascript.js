@@ -263,7 +263,7 @@ function setupEventListeners() {
             { id: 81, name: "Coconut watter", category: "drinks", price: 1.25, originalPrice: 2, discount: 38, description: "Refreshing natural coconut water, full of electrolytes and hydrating goodness.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/shutterstock_490174816.jpg" },
             { id: 82, name: "Avocado milk shake Juice", category: "drinks", price: 2, originalPrice: 3.5, discount: 43, description: "Creamy avocado juice blended with milk or sugar, sometimes drizzled with honey.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/Avocado%20Juice.webp" },
             { id: 84, name: "Mixed Fruit Juice", category: "drinks", price: 2, originalPrice: 3.5, discount: 43, description: "Mixed fruit juice made from seasonal fruits like mango, pineapple, or banana, served chilled.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/Mixed-Fruits.jpg" },
-            { id: 85, name: "Sweet Lassi", category: "drinks", price: 1.25, originalPrice: 3.5, discount: 64, description: "Traditional lassi made from yogurt and sugar – a cooling drink for halal food Sihanoukville meals.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/sweet-lassi-recipe-featured.jpg" },
+            { id: 85, name: "Sweet Lassi", category: "drinks", price: 1.5, originalPrice: 3.5, discount: 64, description: "Traditional lassi made from yogurt and sugar – a cooling drink for halal food Sihanoukville meals.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/sweet-lassi-recipe-featured.jpg" },
             { id: 86, name: "Black Coffee", category: "drinks", price: 0.75, originalPrice: 1.8, discount: 58, description: "Strong, unsweetened black coffee brewed from roasted beans, served hot or cold.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/alin-luna-t4bpI1lXVH0-unsplash-scaled.jpg" },
             { id: 87, name: "Hot Coffee", category: "drinks", price: 0.75, originalPrice: 1.8, discount: 58, description: "Coffee with milk and sugar, served steaming hot for a comforting drink.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/istockphoto-509141291-612x612.jpg" },
             { id: 88, name: "Cold Coffee", category: "drinks", price: 0.75, originalPrice: 1.8, discount: 58, description: "Chilled coffee blended with milk, sugar, and ice cream for a creamy treat.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/Mocha-Iced-Coffee-with-Vanilla-Cold-Foam-800x550-1.jpg" },
@@ -1376,6 +1376,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   images.forEach(img => observer.observe(img));
 });
+
 
 
 
