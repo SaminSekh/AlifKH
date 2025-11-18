@@ -206,7 +206,7 @@ function setupEventListeners() {
             { id: 1, name: "Pani puri/ Fuchka (10pcs)", category: "fastfood", price: 2.5, originalPrice: 4, discount: 38, description: "Crispy Indian pani puri / fuchka served with tangy tamarind water – a popular Bangladeshi street food in Sihanoukville, perfect for halal snack lovers and Indian food tourists.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/Pani-Poori.jpg" },
             { id: 2, name: "Maggi goreng", category: "fastfood", price: 1.5, originalPrice: 2, discount: 25, description: "Stir-fried halal Maggi noodles with Indian spices, giving a tasty desi twist.", image: "https://www.everydayonsales.com/wp-content/uploads/sites/5/2020/08/56a1d32a1wd3ad.jpg" },
             { id: 3, name: "Dal Puri (4pcs)", category: "fastfood", price: 3.2, originalPrice: 4, discount: 20, description: "Fluffy Bengali dal puri stuffed with spiced lentils, a must-try Bangla halal food for expats craving home taste.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/66426523_384937842159724_1394540683754209280_o.jpg" },
-            { id: 4, name: "Singara (2 pcs)", category: "fastfood", price: 2, originalPrice: 2, discount: 0, description: "Crispy halal pastry stuffed with spiced potatoes and peas, bringing a classic desi flavor.", image: "https://i.ytimg.com/vi/atCrB22qM-Q/maxresdefault.jpg" },
+            { id: 4, name: "Singara (2 pcs)", category: "fastfood", price: 1.5, originalPrice: 2, discount: 10, description: "Crispy halal pastry stuffed with spiced potatoes and peas, bringing a classic desi flavor.", image: "https://i.ytimg.com/vi/atCrB22qM-Q/maxresdefault.jpg" },
             { id: 5, name: "Jhal Muri", category: "fastfood", price: 1.3, originalPrice: 2, discount: 35, description: "Traditional Kolkata jhal muri – spicy puffed rice mixed with vegetables and masala, a famous Indian street food Sihanoukville snack.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/Jhal-Muri-2-3.jpg" },
             { id: 6, name: "Special Jhal Muri (curry)", category: "fastfood", price: 2.5, originalPrice: 3, discount: 17, description: "Premium jhal muri with curry twist, bringing authentic Bangladeshi cuisine to Sihanoukville night food lovers.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/jhal-muri-masala-puffed-rice.jpg" },
             { id: 7, name: "Alur chop (5pcs)", category: "fastfood", price: 3, originalPrice: 5, discount: 40, description: "Golden potato fritters loved by Indian expats and travelers looking for budget-friendly halal snacks.", image: "https://raw.githubusercontent.com/SaminSekh/AlifKH/main/alifimage/%E0%A6%86%E0%A6%B2%E0%A7%81%E0%A6%B0_%E0%A6%9A%E0%A6%AA.jpg" },
@@ -1375,6 +1375,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   images.forEach(img => observer.observe(img));
 });
+
 
 
 
